@@ -1,7 +1,8 @@
-import csv 
+#!/usr/bin/env python3
+
+import csv, os, sys, argparse
 import requests 
 import xml.etree.ElementTree as ET 
-import os
 
 TEMPORARY_FILENAME = 'tmp_weather.xml'
   
@@ -71,9 +72,16 @@ def parse_xml(xmlfile):
         time_intervals.append(time_interval)
     return time_intervals
   
-if __name__ == "__main__": 
-    latitude = '32.832909'
-    longitude = '-96.793159'
+if __name__ == "__main__":
+
+    # Check for system args
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--lat', '-a', help='Latitude value', type=str, default='32.832909')
+    parser.add_argument('--lon', '-o', help='Longitude value', type=str, default='-96.793159')
+    args = parser.parse_args()
+
+    latitude = args.lat
+    longitude = args.lon
 
     # Load data from weather prediction
     load_xml(latitude, longitude, TEMPORARY_FILENAME)
@@ -82,3 +90,25 @@ if __name__ == "__main__":
     time_intervals = parse_xml(TEMPORARY_FILENAME)
     os.remove(TEMPORARY_FILENAME)
     print(time_intervals)
+
+
+    ### Prints 7 Day Forecast Hourly (List of 168 total JSON objects)
+    ### Example JSON Object below
+    '''
+    {
+        "time_start": "2020-11-14T18:00:00-06:00",
+        "time_end": "2020-11-14T19:00:00-06:00",
+        "temperature": 79,
+        "cloud_amount": 62,
+        "precipitation_probability": 2,
+        "humidity": 62
+    }
+    '''
+
+    ## Description of attributes
+        ## time_start - start of hour
+        ## time_end - end of hour
+        ## temperature - temperature (°F)
+        ## cloud_amount - amount (%)
+        ## precipitation_probability - amount (%)
+        ## humidity - amount (%)
