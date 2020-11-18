@@ -1,8 +1,12 @@
-require('dotenv').config()
+/* ---------------- DOTENV ----------------------*/
+require("dotenv").config()
+
+/* ---------------- child_process ---------------*/
+const spawn = require("child_process");
 
 /* ----------------- EXPRESS --------------------*/
-const express = require('express');
-const cors = require('cors'); 
+const express = require("express");
+const cors = require("cors"); 
 const app = express();
 const port = process.env.SERVER_PORT;
 /* --- EXPRESS-SESSION --- */
@@ -26,7 +30,7 @@ app.use(cors())
 
 /* ----------------- MONGODB --------------------*/
 // Connect to mongodb
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 mongoose.connect(process.env.DB_URL + process.env.DB_TABLE,{
   useNewUrlParser: true,
@@ -35,18 +39,18 @@ mongoose.connect(process.env.DB_URL + process.env.DB_TABLE,{
   useCreateIndex: true
 });
 var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-var {UserModel, DeviceModel} = require('./models/user.js');
+var {UserModel, DeviceModel} = require("./models/user.js");
 
 /* ----------------- BCRYPT --------------------*/
-var bcrypt  = require('bcrypt');
+var bcrypt  = require("bcrypt");
 
-app.get('/', (req,res) => {
+app.get("/", (req,res) => {
     res.send("This is the backend server for our codefest2020 project. For the frontend use port 3001");
 });
 
-app.post('/login', (req,res) => {
+app.post("/login", (req,res) => {
     let { username, password } = req.body;
 
     if(!username || !password ) {
@@ -157,6 +161,16 @@ app.post("/log_usage", (req,res) => {
     }).catch(err => {
         res.status(500).send("Error searching in database");
         console.log(err)
+    });
+});
+
+app.post("/predict_weather", (req,res) => {
+    const pyprog = spawn('python3', ["./externals/predict_weather.py --lat " + req.body.lat + " --lon " + req.body.lon]);
+    pyprog.stdout.on('data', (data) => {
+        res.send(data);
+    });
+    pyprog.stderr.on('data', (data) => {
+        res.send(data);
     });
 });
 
