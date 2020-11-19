@@ -3,6 +3,7 @@
 import csv, os, sys, argparse
 import requests 
 import xml.etree.ElementTree as ET 
+from datetime import timedelta,datetime
 
 TEMPORARY_FILENAME = 'tmp_weather.xml'
   
@@ -22,7 +23,15 @@ def unfold_xml_element(elm):
     for child in elm:
         unfolded_elm.append(int(child.text))
     return unfolded_elm
-          
+
+def parse_time(s):
+    date = s.split('-')
+    year = date[0]
+    month = date[1]
+    times = date[2].split('T')
+    day = times[0]
+    tme = times[1]
+    return month + '-' + day + '-' + year + '-' + tme
   
 def parse_xml(xmlfile): 
     # Create element tree object 
@@ -68,7 +77,7 @@ def parse_xml(xmlfile):
     # Parse as list of JSON
     time_intervals = []
     for ts, te, vt, vc, vp, vh in zip(time_start, time_end, values_temperature, values_cloud_amount, values_precipitation_probability, values_humidity):
-        time_interval = {'time_start': ts, 'time_end': te, 'temperature': vt, 'cloud_amount': vc, 'precipitation_probability': vp, 'humidity': vh}
+        time_interval = {'time_start': parse_time(ts), 'time_end': parse_time(te), 'temperature': vt, 'cloud_amount': vc, 'precipitation_probability': vp, 'humidity': vh}
         time_intervals.append(time_interval)
     return time_intervals
   
