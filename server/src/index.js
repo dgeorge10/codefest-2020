@@ -15,7 +15,8 @@ app.use(
 	session({
 	  secret: process.env.SESSION_SECRET,
 	  resave: true,
-	  saveUninitialized: true
+	  saveUninitialized: true,
+      secure: false
 	})
 );
 /* --- BODY-PARSER --- */
@@ -25,7 +26,7 @@ app.use(bodyParser.json());
 
 
 /* ___ CORS ___ */
-app.use(cors())
+app.use(cors({credentials: true, origin: 'http://108.36.102.196:3000'}))
 
 
 /* ----------------- MONGODB --------------------*/
@@ -110,7 +111,7 @@ app.get("/statsidk", (req,res) => {
 		res.redirect("/404.html")
         return;
     }
-    DeviceModel.find().then((err,devices) =>{
+    DeviceModel.find({},(err,devices) =>{
         if(err){
             res.status(500).send("Failed to get all devices");
             return;
@@ -120,7 +121,7 @@ app.get("/statsidk", (req,res) => {
 });
 
 app.post("/_get_user", (req, res) => {
-    UserModel.find({username: req.body.username}).then((err,user) =>{
+    UserModel.find({"username": req.body.username},(err,user) =>{
         if(err){
             res.status(500).send("Failed to get all devices");
             return;
@@ -130,6 +131,7 @@ app.post("/_get_user", (req, res) => {
 });
 
 app.post("/add_device", (req, res) => {
+    console.log(req.session);
     if(!req.session.loggedin){
 		res.redirect("/404.html")
         return;
