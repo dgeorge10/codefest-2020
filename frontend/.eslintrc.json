@@ -1,0 +1,41 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["react-app", "airbnb"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "plugins": ["react", "prettier", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "linebreak-style": 0,
+    "no-unused-vars": 1,
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "quotes": ["error", "double"],
+    "import/extensions": [1, "never"],
+    "react/prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "eol-last": 0,
+    "comma-dangle": 0,
+    "no-trailing-spaces": 0,
+    "no-console": 0,
+    "max-classes-per-file": 0,
+    "object-shorthand": 0
+  }
+}
