@@ -9,6 +9,7 @@ const instance: AxiosInstance = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
+  withCredentials: true,
 });
 
 class UserApi {
@@ -22,6 +23,10 @@ class UserApi {
 
   getUser(username: string): Promise<any> {
     return instance.post("/_get_user", { username: username });
+  }
+
+  addDevice(name: string): Promise<any> {
+    return instance.post("/add_device", { name: name });
   }
 }
 

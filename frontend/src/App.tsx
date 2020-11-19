@@ -13,6 +13,7 @@ import Container from "@material-ui/core/Container";
 import PeopleIcon from "@material-ui/icons/People";
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import PersonIcon from "@material-ui/icons/Person";
+import AddIcon from "@material-ui/icons/Add";
 import {
   ListItem,
   ListItemIcon,
@@ -24,6 +25,7 @@ import { useHistory, Route, Switch, Link, NavLink } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Compare from "./pages/Compare";
 import Login from "./pages/Login";
+import AddDevice from "./pages/AddDevice";
 import { User } from "./models";
 
 const useStyles = makeStyles((theme) => {
@@ -162,6 +164,18 @@ export default function App() {
               </ListItem>
             </NavLink>
             <Divider />
+            <NavLink
+              to="/addDevice"
+              className={classes.link}
+              activeClassName="activeNavLink"
+            >
+              <ListItem button>
+                <ListItemIcon style={{ minWidth: 0 }}>
+                  <AddIcon />
+                </ListItemIcon>
+              </ListItem>
+            </NavLink>
+            <Divider />
           </div>
         </MenuList>
       </Drawer>
@@ -172,6 +186,7 @@ export default function App() {
             <Route exact path="/" component={Dashboard} />
             <Route path="/dashboard" render={() => <Dashboard user={user} />} />
             <Route path="/compare" component={Compare} />
+            <Route path="/addDevice" component={AddDevice} />
             <Route
               path="/login"
               render={() => (
