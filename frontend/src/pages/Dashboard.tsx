@@ -7,10 +7,10 @@ import { Api } from "../api";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    display: "flex", 
-    flexDirection: "column", 
-    flexWrap: "wrap" 
-  }
+    display: "flex",
+    flexDirection: "column",
+    flexWrap: "wrap",
+  },
 }));
 
 interface Props {
@@ -30,11 +30,20 @@ const data = {
   datasets: [
     {
       label: "My First dataset",
-      backgroundColor: "rgba(255,99,132,0.2)",
-      borderColor: "rgba(255,99,132,1)",
+      // backgroundColor: "rgba(255,99,132,0.2)",
+      // borderColor: "rgba(255,99,132,1)",
       borderWidth: 1,
-      hoverBackgroundColor: "rgba(255,99,132,0.4)",
-      hoverBorderColor: "rgba(255,99,132,1)",
+      // hoverBackgroundColor: "rgba(255,99,132,0.4)",
+      // hoverBorderColor: "rgba(255,99,132,1)",
+      data: [65, 59, 80, 81, 56, 55, 40, 69],
+    },
+    {
+      label: "My second dataset",
+      // backgroundColor: "rgba(255,99,132,0.2)",
+      // borderColor: "rgba(255,99,132,1)",
+      borderWidth: 1,
+      // hoverBackgroundColor: "rgba(255,99,132,0.4)",
+      // hoverBorderColor: "rgba(255,99,132,1)",
       data: [65, 59, 80, 81, 56, 55, 40, 69],
     },
   ],
@@ -44,6 +53,7 @@ const tempDevices: string[] = [""];
 
 export default function Dashboard(props: Props) {
   const { user } = props;
+  console.log(user);
   const classes = useStyles();
   // const [devices] = user.devices;
   const devices = tempDevices;
@@ -58,7 +68,7 @@ export default function Dashboard(props: Props) {
 
   return (
     <Grid container className={classes.container}>
-      <Grid item md={12} style={{ }}>
+      <Grid item md={12} style={{}}>
         <Bar
           data={data}
           width={100}
@@ -68,30 +78,16 @@ export default function Dashboard(props: Props) {
             scales: {
               yAxes: [
                 {
+                  stacked: true,
                   scaleLabel: {
                     display: true,
                     labelString: "Volume",
                   },
                 },
               ],
-            },
-          }}
-        />
-      </Grid>
-      <Grid item md={12}>
-        <Bar
-          data={data}
-          width={100}
-          height={300}
-          options={{
-            maintainAspectRatio: false,
-            scales: {
-              yAxes: [
+              xAxes: [
                 {
-                  scaleLabel: {
-                    display: true,
-                    labelString: "Volume",
-                  },
+                  stacked: true,
                 },
               ],
             },
