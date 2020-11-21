@@ -1,6 +1,11 @@
+export interface DeviceUsage {
+  date: string;
+  amount: number;
+}
+
 export interface Device {
   name: string;
-  usage: string[];
+  usage: DeviceUsage[];
 }
 
 export interface User {

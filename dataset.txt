@@ -1,0 +1,210 @@
+Sink 1,	November 1,	3.528971574
+Sink 2,	November 1,	4.380019765
+Sink 3,	November 1,	8.943391661
+Shower 1, November 1, 22.28297419
+Shower 2, November 1, 8.628137066
+Dishwasher,	November 1,	3.341208305
+Laundry Machine, November 1, 5.974712398
+Sink 1,	November 2,	1.060802308
+Sink 2,	November 2,	9.584836014
+Sink 3,	November 2,	2.707737883
+Shower 1, November 2, 8.634482699
+Shower 2, November 2, 19.88337659
+Dishwasher,	November 2,	0.168988641
+Laundry Machine, November 2, 0.559946629
+Sink 1,	November 3,	5.057554002
+Sink 2,	November 3,	1.708680585
+Sink 3,	November 3,	3.443253192
+Shower 1, November 3, 5.977371247
+Shower 2, November 3, 0.145821354
+Dishwasher,	November 3, 0.988290452
+Laundry Machine, November 3,	6.22253128
+Sink 1,	November 4,	3.653327936
+Sink 2,	November 4,	2.557519765
+Sink 3,	November 4,	0.631247206
+Shower 1, November 4, 5.099386522
+Shower 2, November 4, 14.40283112
+Dishwasher,	November 4,	6.5243508
+Laundry Machine, November 4, 0.176597131
+Sink 1,	November 5,	0.645184274
+Sink 2,	November 5,	4.934423005
+Sink 3,	November 5,	4.890980653
+Shower 1, November 5, 13.31302785
+Shower 2, November 5, 17.53491464
+Dishwasher,	November 5,	1.919112278
+Laundry Machine, November 5, 4.831341078
+Sink 1,	November 6,	5.694883092
+Sink 2,	November 6,	2.723643633
+Sink 3,	November 6,	7.023148439
+Shower 1, November 6, 7.170504509
+Shower 2, November 6, 14.95355714
+Dishwasher,	November 6,	7.071251369
+Laundry Machine, November 6,	0.815426586
+Sink 1,	November 7,	7.018805215
+Sink 2,	November 7,	3.580454027
+Sink 3,	November 7,	0.077650569
+Shower 1, November 7, 6.827826643
+Shower 2, November 7, 15.60622294
+Dishwasher,	November 7,	1.028203
+Laundry Machine, November 7, 6.793332948
+Sink 1,	November 8,	10.34263235
+Sink 2,	November 8,	10.27198467
+Sink 3,	November 8,	1.398364346
+Shower 1, November 8, 10.94797648
+Shower 2, November 8, 13.7774919
+Dishwasher,	November 8,	7.988279422
+Laundry Machine, November 8, 1.934478106
+Sink 1,	November 9,	3.274133446
+Sink 2,	November 9,	3.016568116
+Sink 3,	November 9,	6.740317098
+Shower 1, November 9, 7.142818763
+Shower 2, November 9, 12.92212629
+Dishwasher,	November 9,	1.055338131
+Laundry Machine, November 9, 6.701342973
+Sink 1,	November 10, 6.896544781
+Sink 2,	November 10, 4.31506789
+Sink 3,	November 10, 0.358517131
+Shower 1, November 10, 1.795056788
+Shower 2, November 10, 21.62785974
+Dishwasher,	November 10, 3.787193703
+Laundry Machine, November 10, 4.421824517
+Sink 1,	November 11, 2.244298897
+Sink 2,	November 11, 9.509637256
+Sink 3,	November 11, 9.432770898
+Shower 1, November 11, 20.20078048
+Shower 2, November 11, 3.775830734
+Dishwasher,	November 11, 1.669184646
+Laundry Machine, November 11, 0.881900802
+Sink 1,	November 12, 10.26356774
+Sink 2,	November 12, 3.981748211
+Sink 3,	November 12, 2.937902981
+Shower 1, November 12, 5.84263018
+Shower 2, November 12, 16.23370665
+Dishwasher,	November 12, 3.472004053
+Laundry Machine, November 12, 3.749804649
+Sink 1,	November 13, 0.102990448
+Sink 2,	November 13, 1.341538703
+Sink 3,	November 13, 1.857656931
+Shower 1, November 13, 10.95147914
+Shower 2, November 13, 2.185171987
+Dishwasher,	November 13, 0.868565752
+Laundry Machine, November 13, 0.285159761
+Sink 1,	November 14, 2.505998807
+Sink 2,	November 14, 6.660507423
+Sink 3,	November 14, 3.485334137
+Shower 1, November 14, 5.887784034
+Shower 2, November 14, 5.079657622
+Dishwasher,	November 14, 0.290512932
+Laundry Machine, November 14, 4.96156891
+Sink 1,	November 15, 0.207673359
+Sink 2,	November 15, 7.454350419
+Sink 3,	November 15, 1.705140113
+Shower 1, November 15, 15.29772638
+Shower 2, November 15, 1.139722691
+Dishwasher,	November 15, 0.813019735
+Laundry Machine, November 15, 3.593043631
+Sink 1,	November 16, 7.177441921
+Sink 2,	November 16, 7.089022941
+Sink 3,	November 16, 2.130856406
+Shower 1, November 16, 3.156293239
+Shower 2, November 16, 15.65628511
+Dishwasher,	November 16, 6.786618867
+Laundry Machine, November 16, 5.120067405
+Sink 1,	November 17, 4.9580273
+Sink 2,	November 17, 10.8407242
+Sink 3,	November 17, 8.79416233
+Shower 1, November 17, 10.67206161
+Shower 2, November 17, 17.93087587
+Dishwasher,	November 17, 1.395526903
+Laundry Machine, November 17, 6.349468311
+Sink 1,	November 18, 7.960085863
+Sink 2,	November 18, 7.604798566
+Sink 3,	November 18, 8.823437858
+Shower 1, November 18, 13.65977242
+Shower 2, November 18, 8.018280258
+Dishwasher,	November 18, 1.783551422
+Laundry Machine, November 18, 6.48301574
+Sink 1,	November 19, 5.230282465
+Sink 2,	November 19, 6.853652245
+Sink 3,	November 19, 3.171613308
+Shower 1, November 19, 4.441608244
+Shower 2, November 19, 23.45974648
+Dishwasher,	November 19, 2.447177303
+Laundry Machine, November 19, 0.507634934
+Sink 1,	November 20, 9.060883307
+Sink 2,	November 20, 0.809002853
+Sink 3,	November 20, 3.395543671
+Shower 1, November 20, 16.38913063
+Shower 2, November 20, 23.92816718
+Dishwasher,	November 20, 0.713229193
+Laundry Machine, November 20, 1.930657579
+Sink 1,	November 21, 3.383050981
+Sink 2,	November 21, 7.317402075
+Sink 3,	November 21, 8.334268088
+Shower 1, November 21, 15.56346468
+Shower 2, November 21, 2.529207207
+Dishwasher,	November 21, 5.274806283
+Laundry Machine, November 21, 4.501790957
+Sink 1,	November 22, 1.839261058
+Sink 2,	November 22, 2.426969042
+Sink 3,	November 22, 1.045119269
+Shower 1, November 22, 4.555506684
+Shower 2, November 22, 18.09942898
+Dishwasher,	November 22, 7.57027506
+Laundry Machine, November 22, 0.877527016
+Sink 1,	November 23, 7.74237951
+Sink 2,	November 23, 8.780798445
+Sink 3,	November 23, 3.44839734
+Shower 1, November 23, 8.421016424
+Shower 2, November 23, 9.663681284
+Dishwasher,	November 23, 2.640831811
+Laundry Machine, November 23, 0.169569392
+Sink 1,	November 24, 1.211055996
+Sink 2,	November 24, 9.676021246
+Sink 3,	November 24, 2.919405377
+Shower 1, November 24, 0.989020179
+Shower 2, November 24, 18.94611583
+Dishwasher,	November 24, 1.340686583
+Laundry Machine, November 24, 2.278268231
+Sink 1,	November 25, 3.423987132
+Sink 2,	November 25, 4.794650848
+Sink 3,	November 25, 6.734116581
+Shower 1, November 25, 15.06407511
+Shower 2, November 25, 6.393956427
+Dishwasher,	November 25, 3.662096182
+Laundry Machine, November 25, 3.691136221
+Sink 1,	November 26, 6.113419473
+Sink 2,	November 26, 9.875081779
+Sink 3,	November 26, 0.748789263
+Shower 1, November 26, 14.54631583
+Shower 2, November 26, 19.20903168
+Dishwasher,	November 26, 7.524479677
+Laundry Machine, November 26, 4.727863661
+Sink 1,	November 27, 10.02389893
+Sink 2,	November 27, 1.285931144
+Sink 3,	November 27, 3.843914608
+Shower 1, November 27, 2.192846277
+Shower 2, November 27, 12.01523705
+Dishwasher,	November 27, 2.450872456
+Laundry Machine, November 27, 6.383090655
+Sink 1,	November 28, 6.293207762
+Sink 2,	November 28, 7.357582996
+Sink 3,	November 28, 7.773667766
+Shower 1, November 28, 10.69846709
+Shower 2, November 28, 22.44936314
+Dishwasher,	November 28, 1.432577865
+Laundry Machine, November 28, 3.06531204
+Sink 1,	November 29, 0.311577467
+Sink 2,	November 29, 1.19562289
+Sink 3,	November 29, 1.115553043
+Shower 1, November 29, 16.54048461
+Shower 2, November 29, 11.14262836
+Dishwasher,	November 29, 7.118497275
+Laundry Machine, November 29, 2.897586985
+Sink 1,	November 30, 3.351603487
+Sink 2,	November 30, 4.893205167
+Sink 3,	November 30, 4.060135785
+Shower 1, November 30, 15.9130576
+Shower 2, November 30, 12.74959149
+Dishwasher,	November 30, 2.47534956
+Laundry Machine, November 30, 4.181475384
