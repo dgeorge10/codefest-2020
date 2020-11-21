@@ -188,7 +188,7 @@ export default function App() {
             <Route path="/compare" component={Compare} />
             <Route
               path="/addDevice"
-              render={() => <AddDevice username={user.username} />}
+              render={() => <AddDevice user={user} setUser={setUser} />}
             />
             <Route
               path="/login"
