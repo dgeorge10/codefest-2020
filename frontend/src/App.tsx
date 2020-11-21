@@ -186,7 +186,10 @@ export default function App() {
             <Route exact path="/" component={Dashboard} />
             <Route path="/dashboard" render={() => <Dashboard user={user} />} />
             <Route path="/compare" component={Compare} />
-            <Route path="/addDevice" component={AddDevice} />
+            <Route
+              path="/addDevice"
+              render={() => <AddDevice username={user.username} />}
+            />
             <Route
               path="/login"
               render={() => (

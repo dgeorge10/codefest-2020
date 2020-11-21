@@ -3,7 +3,12 @@ import React, { useState } from "react";
 import { InputLabel, FormControl, Input, Button } from "@material-ui/core";
 import { Api } from "../api";
 
-export default function AddDevice() {
+interface Props {
+  username: string;
+}
+
+export default function AddDevice(props: Props) {
+  const { username } = props;
   const [deviceName, setDeviceName] = useState<string>("");
 
   return (
@@ -20,7 +25,7 @@ export default function AddDevice() {
       <Button
         onClick={() => {
           Api.users
-            .addDevice(deviceName)
+            .addDevice(deviceName, username)
             .then(console.log)
             .catch(console.error);
         }}
