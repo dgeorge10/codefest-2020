@@ -9,16 +9,7 @@ const express = require("express");
 const cors = require("cors"); 
 const app = express();
 const port = process.env.SERVER_PORT;
-/* --- EXPRESS-SESSION --- */
-var session = require("express-session");
-app.use(
-	session({
-	  secret: process.env.SESSION_SECRET,
-	  resave: true,
-	  saveUninitialized: true,
-      secure: false
-	})
-);
+
 /* ___ CORS ___ */
 app.use(cors());
 
@@ -43,7 +34,7 @@ mongoose.connect(process.env.DB_URL + process.env.DB_TABLE,{
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-var {UserModel, DeviceModel} = require("./models/user.js");
+var {UserModel, DeviceModel, DeviceUsageModel} = require("./models/user.js");
 
 /* ----------------- BCRYPT --------------------*/
 var bcrypt  = require("bcrypt");
@@ -63,16 +54,14 @@ app.post("/api/login", (req,res) => {
         if(!user){
             res.status(401).send("User not found");
         }
-        bcrypt.compare(password, user.password, (err, result)=>{  
+        bcrypt.compare(password, user.password, (err, result)=>{
             if( result ) {
-                req.session.loggedin = true;
-                req.session.user = user;
                 res.send(user);
             } else {
                 res.status(401).send("error logging in");
             };
         });
-        
+
     }).catch(err => console.log(err));
 })
 
@@ -91,13 +80,11 @@ app.post("/api/register", (req,res) => {
         });
         newUser.save()
         .then(() => {
-            req.session.loggedin = true;
             res.redirect("./dashboard")
         })
         .catch((err) =>{
-            console.log("Failed to register user ("+ username +"): Already Exists")
-            res.status(401).send("User already exists");
-        });
+            console.log("Failed to register user ("+ username +"): Already Exists");
+            res.status(401).send("User already exists"); });
     })
 });
 
@@ -126,16 +113,11 @@ app.post("/api/addDevice", (req, res) => {
 
 
 app.post("/api/logout", (req, res) => {
-	req.session.destroy();
 	res.status(200);
 	res.redirect("/");
 });
 
 app.get("/api/statsidk", (req,res) => {
-    if(!req.session.loggedin){
-		res.redirect("/404.html")
-        return;
-    }
     DeviceModel.find({},(err,devices) =>{
         if(err){
             res.status(500).send("Failed to get all devices");
@@ -187,6 +169,6 @@ app.post("/api/predict_weather", (req,res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Server at http://localhost:${port}`)
 });
 
