@@ -19,14 +19,15 @@ app.use(
       secure: false
 	})
 );
+/* ___ CORS ___ */
+app.use(cors());
+
+
 /* --- BODY-PARSER --- */
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
-/* ___ CORS ___ */
-app.use(cors({credentials: true, origin: 'http://108.36.102.196:3000'}))
 
 
 /* ----------------- MONGODB --------------------*/
@@ -100,6 +101,30 @@ app.post("/register", (req,res) => {
     })
 });
 
+app.post("/addDevice", (req, res) => {
+    console.log(req.body.deviceName);
+    UserModel.findOne({username: req.body.username}, (err,user) => {
+        if (err) {
+            res.status(500).send("Failed to find user");
+        }
+        const newDevice= new DeviceModel({
+            name:req.body.deviceName,
+            usage:[]
+        });
+        console.log(user);
+
+        user.devices.push(newDevice);
+        user.save()
+        .then(() => {
+            res.send(user);
+        }).catch((err) => {
+            console.log(err);
+            res.status(500).send("that sucked");
+        });
+    });
+});
+
+
 app.post("/logout", (req, res) => {
 	req.session.destroy();
 	res.status(200);
@@ -128,21 +153,6 @@ app.post("/_get_user", (req, res) => {
         }
         res.send(user);
     });
-});
-
-app.post("/add_device", (req, res) => {
-    console.log(req.session);
-    if(!req.session.loggedin){
-		res.redirect("/404.html")
-        return;
-    }
-    const newDevice= new DeviceModel({
-        name:req.body.name,
-        usage:[]
-    });
-    req.session.user.devices.push(newDevice);
-    req.session.user.devices.save(done);
-    res.status(200);
 });
 
 app.post("/log_usage", (req,res) => {
@@ -175,7 +185,6 @@ app.post("/predict_weather", (req,res) => {
         res.send(data);
     });
 });
-
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
