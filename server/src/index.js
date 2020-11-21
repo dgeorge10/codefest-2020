@@ -9,16 +9,7 @@ const express = require("express");
 const cors = require("cors"); 
 const app = express();
 const port = process.env.SERVER_PORT;
-/* --- EXPRESS-SESSION --- */
-var session = require("express-session");
-app.use(
-	session({
-	  secret: process.env.SESSION_SECRET,
-	  resave: true,
-	  saveUninitialized: true,
-      secure: false
-	})
-);
+
 /* ___ CORS ___ */
 app.use(cors());
 
@@ -65,8 +56,6 @@ app.post("/api/login", (req,res) => {
         }
         bcrypt.compare(password, user.password, (err, result)=>{  
             if( result ) {
-                req.session.loggedin = true;
-                req.session.user = user;
                 res.send(user);
             } else {
                 res.status(401).send("error logging in");
@@ -91,7 +80,6 @@ app.post("/api/register", (req,res) => {
         });
         newUser.save()
         .then(() => {
-            req.session.loggedin = true;
             res.redirect("./dashboard")
         })
         .catch((err) =>{
@@ -126,16 +114,11 @@ app.post("/api/addDevice", (req, res) => {
 
 
 app.post("/api/logout", (req, res) => {
-	req.session.destroy();
 	res.status(200);
 	res.redirect("/");
 });
 
 app.get("/api/statsidk", (req,res) => {
-    if(!req.session.loggedin){
-		res.redirect("/404.html")
-        return;
-    }
     DeviceModel.find({},(err,devices) =>{
         if(err){
             res.status(500).send("Failed to get all devices");
