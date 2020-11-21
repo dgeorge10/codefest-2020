@@ -52,7 +52,7 @@ app.get("/", (req,res) => {
     res.send("This is the backend server for our codefest2020 project. For the frontend use port 3001");
 });
 
-app.post("/login", (req,res) => {
+app.post("/api/login", (req,res) => {
     let { username, password } = req.body;
 
     if(!username || !password ) {
@@ -76,7 +76,7 @@ app.post("/login", (req,res) => {
     }).catch(err => console.log(err));
 })
 
-app.post("/register", (req,res) => {
+app.post("/api/register", (req,res) => {
     let { username, password } = req.body;
     if (!username || !password) {
         res.sendStatus(400);
@@ -101,7 +101,7 @@ app.post("/register", (req,res) => {
     })
 });
 
-app.post("/addDevice", (req, res) => {
+app.post("/api/addDevice", (req, res) => {
     console.log(req.body.deviceName);
     UserModel.findOne({username: req.body.username}, (err,user) => {
         if (err) {
@@ -125,13 +125,13 @@ app.post("/addDevice", (req, res) => {
 });
 
 
-app.post("/logout", (req, res) => {
+app.post("/api/logout", (req, res) => {
 	req.session.destroy();
 	res.status(200);
 	res.redirect("/");
 });
 
-app.get("/statsidk", (req,res) => {
+app.get("/api/statsidk", (req,res) => {
     if(!req.session.loggedin){
 		res.redirect("/404.html")
         return;
@@ -145,7 +145,7 @@ app.get("/statsidk", (req,res) => {
     });
 });
 
-app.post("/_get_user", (req, res) => {
+app.post("/api/_get_user", (req, res) => {
     UserModel.find({"username": req.body.username},(err,user) =>{
         if(err){
             res.status(500).send("Failed to get all devices");
@@ -155,7 +155,7 @@ app.post("/_get_user", (req, res) => {
     });
 });
 
-app.post("/log_usage", (req,res) => {
+app.post("/api/log_usage", (req,res) => {
     UserModel.findOne({username:req.body.username}).then(user => {
         if(!user){
             res.status(401).send("User(" + req.body.username +") not found");
@@ -176,7 +176,7 @@ app.post("/log_usage", (req,res) => {
     });
 });
 
-app.post("/predict_weather", (req,res) => {
+app.post("/api/predict_weather", (req,res) => {
     const pyprog = spawn('python3', ["./externals/predict_weather.py --lat " + req.body.lat + " --lon " + req.body.lon]);
     pyprog.stdout.on('data', (data) => {
         res.send(data);

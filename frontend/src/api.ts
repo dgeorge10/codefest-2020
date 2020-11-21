@@ -5,7 +5,6 @@ import axios, { AxiosInstance } from "axios";
 import { UserSimple } from "./models";
 
 const instance: AxiosInstance = axios.create({
-  baseURL: "http://prieur.ml:2020",
   headers: {
     "Content-Type": "application/json",
   },
@@ -13,19 +12,19 @@ const instance: AxiosInstance = axios.create({
 
 class UserApi {
   login(user: UserSimple): Promise<any> {
-    return instance.post("/login", user);
+    return instance.post("/api/login", user);
   }
 
   register(user: UserSimple): Promise<any> {
-    return instance.post("/register", user);
+    return instance.post("/api/register", user);
   }
 
   getUser(username: string): Promise<any> {
-    return instance.post("/_get_user", { username: username });
+    return instance.post("/api/_get_user", { username: username });
   }
 
   addDevice(deviceName: string, username: string): Promise<any> {
-    return instance.post("/addDevice", {
+    return instance.post("/api/addDevice", {
       deviceName: deviceName,
       username: username,
     });
