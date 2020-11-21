@@ -34,7 +34,7 @@ mongoose.connect(process.env.DB_URL + process.env.DB_TABLE,{
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-var {UserModel, DeviceModel} = require("./models/user.js");
+var {UserModel, DeviceModel, DeviceUsageModel} = require("./models/user.js");
 
 /* ----------------- BCRYPT --------------------*/
 var bcrypt  = require("bcrypt");
@@ -54,14 +54,14 @@ app.post("/api/login", (req,res) => {
         if(!user){
             res.status(401).send("User not found");
         }
-        bcrypt.compare(password, user.password, (err, result)=>{  
+        bcrypt.compare(password, user.password, (err, result)=>{
             if( result ) {
                 res.send(user);
             } else {
                 res.status(401).send("error logging in");
             };
         });
-        
+
     }).catch(err => console.log(err));
 })
 
@@ -83,9 +83,8 @@ app.post("/api/register", (req,res) => {
             res.redirect("./dashboard")
         })
         .catch((err) =>{
-            console.log("Failed to register user ("+ username +"): Already Exists")
-            res.status(401).send("User already exists");
-        });
+            console.log("Failed to register user ("+ username +"): Already Exists");
+            res.status(401).send("User already exists"); });
     })
 });
 
@@ -170,6 +169,6 @@ app.post("/api/predict_weather", (req,res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Server at http://localhost:${port}`)
 });
 
