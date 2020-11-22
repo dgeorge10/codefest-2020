@@ -24,3 +24,15 @@ export interface GroupedUsage {
   name: string;
   usage: DeviceUsage[];
 }
+
+export interface LiveDatapoint {
+    x: number;
+    y: number;
+}
+
+export interface LiveDeviceUsage {
+    name: string;
+    resolution: string;
+    /* This should be cumulative */
+    data: LiveDatapoint[];
+}

@@ -1,4 +1,9 @@
-import { Device, GroupedUsage, DeviceUsage } from "../models";
+import {
+  Device,
+  GroupedUsage,
+  DeviceUsage,
+  LiveDeviceUsage
+} from "../models";
 
 export default function deviceUsageToRange(
   devices: Device[],
@@ -48,8 +53,69 @@ function datesMatch(date1: Date, date2: Date): boolean {
   );
 }
 
+function datesMatchToMin(date1: Date, date2: Date): boolean {
+  return (
+    date1.getMinutes() === date2.getMinutes() &&
+    date1.getHours() === date2.getHours() &&
+    date1.getDate() === date2.getDate() &&
+    date1.getMonth() === date2.getMonth() &&
+    date1.getFullYear() === date2.getFullYear()
+  );
+}
+
 export function addDays(date: Date, days: number): Date {
   const result = new Date(date);
   result.setDate(result.getDate() + days);
   return result;
+}
+
+export function deviceUsageToMinutes(
+  devices: Device[],
+  day: Date,
+) {
+  const liveUsage: LiveDeviceUsage[] = [];
+  devices.forEach((device) => {
+    liveUsage.push({
+      name: device.name,
+      resolution: "1 min",
+      data: [
+        {
+          x: 0,
+          y: 0,
+        },
+      ],
+    });
+  });
+
+  devices.forEach((device, i) => {
+    let lastDate: Date;
+    device.usage.forEach((use) => {
+      if (datesMatch(day, new Date(use.date))) {
+        if (lastDate === undefined) {
+          lastDate = new Date(use.date);
+        }
+        if (!datesMatchToMin(lastDate, new Date(use.date))) {
+          liveUsage[i].data.push({
+            x: new Date(use.date).getMinutes(),
+            y: liveUsage[i].data[liveUsage[i].data.length - 1].y,
+          });
+          const liveDatapoint = liveUsage[i].data[liveUsage[i].data.length - 1];
+          liveDatapoint.y += use.amount;
+        }
+      }
+    });
+  });
+
+  /* Add a point for the currentTime */
+  const currentTime = new Date();
+  if (datesMatch(currentTime, day)) {
+    devices.forEach((device, i) => {
+      liveUsage[i].data.push({
+        x: currentTime.getMinutes(),
+        y: liveUsage[i].data[liveUsage[i].data.length - 1].y,
+      });
+    });
+  }
+
+  return liveUsage;
 }
