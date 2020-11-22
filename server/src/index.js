@@ -39,7 +39,7 @@ var {UserModel, DeviceModel, DeviceUsageModel} = require("./models/user.js");
 /* ----------------- BCRYPT --------------------*/
 var bcrypt  = require("bcrypt");
 
-app.get("/", (req,res) => {
+app.get("/api/", (req,res) => {
     res.send("This is the backend server for our codefest2020 project. For the frontend use port 3001");
 });
 
@@ -138,21 +138,27 @@ app.post("/api/_get_user", (req, res) => {
 });
 
 app.post("/api/log_usage", (req,res) => {
+    console.log("received:", req.body.amount);
     UserModel.findOne({username:req.body.username}).then(user => {
         if(!user){
             res.status(401).send("User(" + req.body.username +") not found");
             return;
         }
-        user.devices.findOne({name:req.body.device}).then(device => {
-            if(!device){
-                res.status(401).send("Device(" + req.body.device +") not found for user(" + req.body.username + ")");
-                return;
+        user.devices.forEach(device => {
+            if (device.name === req.body.device) {
+                /* Usage comes in as Liters convert to db which uses gallons */
+                const usage = new DeviceUsageModel({
+                    date: new Date(),
+                    amount: 0.264172 * req.body.amount
+                })
+                device.usage.push(usage);
             }
-            device.usage.push(req.body.timestamp);
-            device.save(done);
+        })
+        // TODO: handle this callback
+        user.save(()=>{res.send("Done")});
 
-        });
-    }).catch(err => {
+    })
+    .catch(err => {
         res.status(500).send("Error searching in database");
         console.log(err)
     });
