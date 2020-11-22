@@ -136,7 +136,7 @@ app.post("/api/_get_user", (req, res) => {
             res.status(500).send("Failed to get all devices");
             return;
         }
-        res.send(user);
+        res.send(user.devices);
     });
 });
 
