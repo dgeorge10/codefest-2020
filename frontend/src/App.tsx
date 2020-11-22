@@ -159,7 +159,7 @@ export default function App() {
                     className={classes.title}
                     style={{ padding: "5px" }}
                   >
-                    {`Welcome ${user.username}!`}
+                    {`Welcome, ${user.username}!`}
                   </Typography>
                   <PersonIcon />
                 </div>

@@ -73,7 +73,7 @@ const dayLabels = [
 ];
 
 export function getColorPalette(i: number, max: number): string {
-  return `hsl( ${(i / max) * 360} ,100%,50%)`;
+  return `hsl( ${((360 * ((max + 1) * i)) / max) % 360} ,100%,50%)`;
 }
 
 function generateLiveLabels(liveDatasets: LiveChartDataset[]) {
@@ -123,6 +123,39 @@ export default function Dashboard(props: Props) {
     }
   }, [currentDevices, startDate, endDate]);
 
+  const temperatures = [
+    { temp: 54, weather: "Sunny" },
+    { temp: 60, weather: "Sunny" },
+    { temp: 60, weather: "Sunny" },
+    { temp: 59, weather: "Partly Cloudy" },
+    { temp: 60, weather: "Partly Cloudy" },
+    { temp: 54, weather: "Partly Cloudy" },
+    { temp: 40, weather: "Cloudy" },
+    { temp: 26, weather: "Cloudy" },
+    { temp: 29, weather: "Partly Cloudy" },
+    { temp: 28, weather: "Partly Cloudy" },
+    { temp: 27, weather: "Partly Cloudy" },
+    { temp: 30, weather: "Partly Cloudy" },
+    { temp: 30, weather: "Cloudy" },
+    { temp: 31, weather: "Partly Cloudy" },
+    { temp: 39, weather: "Partly Cloudy" },
+    { temp: 41, weather: "Partly Cloudy" },
+    { temp: 51, weather: "Partly Cloudy" },
+    { temp: 42, weather: "Partly Cloudy" },
+    { temp: 33, weather: "Partly Cloudy" },
+    { temp: 34, weather: "Sunny" },
+    { temp: 33, weather: "Sunny" },
+    { temp: 28, weather: "Partly Cloudy" },
+    { temp: 23, weather: "Cloudy" },
+    { temp: 27, weather: "Partly Cloudy" },
+    { temp: 23, weather: "Cloudy" },
+    { temp: 23, weather: "Cloudy" },
+    { temp: 28, weather: "Partly Cloudy" },
+    { temp: 29, weather: "Partly Cloudy" },
+    { temp: 29, weather: "Partly Cloudy" },
+    { temp: 28, weather: "Partly Cloudy" },
+  ];
+
   let weeklyData = {};
   const datasets: ChartDataset[] = [];
   const labels: string[] = [];
@@ -141,7 +174,11 @@ export default function Dashboard(props: Props) {
     });
     chartData[0].usage.forEach((day) => {
       const date = new Date(day.date);
-      labels.push(dayLabels[date.getDay()]);
+      labels.push(
+        `${dayLabels[date.getDay()]} ${temperatures[date.getDate()].temp}°F ${
+          temperatures[date.getDate()].weather
+        }`
+      );
     });
     weeklyData = {
       labels: labels,
@@ -182,6 +219,7 @@ export default function Dashboard(props: Props) {
 
   return (
     <Grid container className={classes.container}>
+      <Typography variant="h3">Dashboard</Typography>
       <Grid item xs={12} className={classes.chartGrid}>
         <Paper elevation={3} style={{ padding: "10px" }}>
           <Typography variant="h4">Current Usage</Typography>

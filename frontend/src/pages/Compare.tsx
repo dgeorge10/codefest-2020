@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     flexDirection: "row",
+    justifyContent: "space-evenly",
   },
 }));
 
@@ -64,6 +65,7 @@ export default function Compare() {
 
   return (
     <Grid container className={classes.container}>
+      <Typography variant="h3">Compare</Typography>
       <Grid item xs={12}>
         <Paper elevation={3} style={{ padding: "10px" }}>
           <Typography variant="h4">Compare Water Usage</Typography>
