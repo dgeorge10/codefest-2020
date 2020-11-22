@@ -10,6 +10,9 @@ const cors = require("cors");
 const app = express();
 const port = process.env.SERVER_PORT;
 
+/* --- FS --- */
+const fs = require("fs");
+
 /* ___ CORS ___ */
 app.use(cors());
 
@@ -173,6 +176,57 @@ app.post("/api/predict_weather", (req,res) => {
         res.send(data);
     });
 });
+
+/*
+app.get("/api/insertDevices", (req,res) => {
+    fs.readFile("/home/dennis/codefest-2020/server/src/dataset.txt", "utf8", (err, data) => {
+        if (err) throw err;
+
+
+        var newDevices = {};
+
+        var lines = data.split("\r\n");
+        for(var i = 0; i<lines.length; i++) {
+            var c = lines[i].split(",");
+            if (c.length === 3) {
+                var device = c[0].replace("\t", "");
+                var date = new Date(c[1].replace("\t", "") + " 2020");
+                var amount = c[2].replace("\t", "");
+            }
+
+           const newUsage = new DeviceUsageModel({
+                date: date,
+                amount: amount
+            });
+
+            if (newDevices[device]) {
+                newDevices[device].push(newUsage);
+            } else {
+                newDevices[device] = [newUsage];
+            }
+        }
+
+        for(var device in newDevices){
+            const newDevice = new DeviceModel({
+                name: device,
+                usage: newDevices[device]
+            })
+
+            UserModel.findOne({username: "dennis"}, (err, user) => {
+                if (err) {
+                    res.status(500).send("failed to find user");
+                }
+                user.devices.push(newDevice);
+                user.save()
+                    .then(() => res.send(user))
+                    .catch(() => res.status(500).send("that sucked"));
+            });
+        }
+
+    });
+
+});
+*/
 
 app.listen(port, () => {
   console.log(`Server at http://localhost:${port}`)
