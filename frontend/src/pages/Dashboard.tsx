@@ -91,7 +91,7 @@ export default function Dashboard(props: Props) {
   const classes = useStyles();
 
   useEffect(() => {
-    if (user._id !== "0") {
+    if (user && user._id !== "0") {
       const interval = setInterval(async () => {
         await Api.users
           .getUser(user.username)

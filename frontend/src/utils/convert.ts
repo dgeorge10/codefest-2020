@@ -87,7 +87,7 @@ export function deviceUsageToMinutes(devices: Device[], day: Date) {
     maxMinutes = dateToMin(currentTime);
   }
 
-  for (let minute = 0; minute < maxMinutes; minute += 1) {
+  for (let minute = 0; minute <= maxMinutes; minute += 1) {
     liveUsage.forEach((liveU) => {
       liveU.data.push({
         x: addMinutes(startOfDay, minute),
@@ -101,8 +101,6 @@ export function deviceUsageToMinutes(devices: Device[], day: Date) {
       if (datesMatch(day, new Date(use.date))) {
         const minOfDay = dateToMin(new Date(use.date));
         liveUsage[i].data[minOfDay].y += use.amount;
-        const liveDatapoint = liveUsage[i].data[liveUsage[i].data.length - 1];
-        liveDatapoint.y += use.amount;
       }
     });
   });
@@ -122,9 +120,10 @@ export function deviceUsageToMinutes(devices: Device[], day: Date) {
         )
       ) {
         toRemove.push(i);
+      } else {
+        point.y += runningTotal;
+        runningTotal = point.y;
       }
-      point.y += runningTotal;
-      runningTotal = point.y;
     });
     toRemove.reverse();
     toRemove.forEach((index) => {
