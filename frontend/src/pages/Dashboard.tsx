@@ -8,7 +8,13 @@ import {
   KeyboardDatePicker,
 } from "@material-ui/pickers";
 import { Bar, Line } from "react-chartjs-2";
-import { User, GroupedUsage, LiveDatapoint, LiveDeviceUsage } from "../models";
+import {
+  User,
+  GroupedUsage,
+  LiveDatapoint,
+  LiveDeviceUsage,
+  Device,
+} from "../models";
 import deviceUsageToRange, {
   addDays,
   deviceUsageToMinutes,
@@ -54,7 +60,6 @@ interface LiveChartDataset {
 
 interface Props {
   user: User;
-  setUser: (user: User) => void;
 }
 
 const dayLabels = [
@@ -80,9 +85,12 @@ function generateLiveLabels(liveDatasets: LiveChartDataset[]) {
 }
 
 export default function Dashboard(props: Props) {
-  const { user, setUser } = props;
+  const { user } = props;
   const [chartData, setChartData] = useState<GroupedUsage[]>([]);
   const [liveData, setLiveData] = useState<LiveDeviceUsage[]>([]);
+  const [currentDevices, setCurrentDevices] = useState<Device[]>(
+    user && user.devices
+  );
   const [startDate, setStartDate] = useState<Date | null>(
     addDays(new Date(), -6)
   );
@@ -91,13 +99,13 @@ export default function Dashboard(props: Props) {
   const classes = useStyles();
 
   useEffect(() => {
-    if (user && user._id !== "0") {
+    if (currentDevices && currentDevices.length > 0) {
       const interval = setInterval(async () => {
         await Api.users
           .getUser(user.username)
           .then((response) => {
             console.log("refeteched user data");
-            setUser(response.data);
+            setCurrentDevices(response.data);
             setTime(Date.now());
           })
           .catch(console.error);
@@ -107,13 +115,13 @@ export default function Dashboard(props: Props) {
   }, []);
 
   useEffect(() => {
-    if (user && startDate && endDate && user.devices) {
+    if (startDate && endDate && currentDevices) {
       const currentDate: Date = new Date();
       // currentDate.setDate(currentDate.getDate() - 1);
-      setChartData(deviceUsageToRange(user.devices, startDate, endDate));
-      setLiveData(deviceUsageToMinutes(user.devices, currentDate));
+      setChartData(deviceUsageToRange(currentDevices, startDate, endDate));
+      setLiveData(deviceUsageToMinutes(currentDevices, currentDate));
     }
-  }, [user, startDate, endDate]);
+  }, [currentDevices, startDate, endDate]);
 
   let weeklyData = {};
   const datasets: ChartDataset[] = [];

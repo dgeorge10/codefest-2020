@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     width: "100%",
-    margin: "5px",
+    margin: theme.spacing(0.5),
   },
   loginBackground: {
     justifyContent: "center",
@@ -105,7 +105,7 @@ export default function Login(props: Props) {
                     devices: userResp.data.devices,
                   });
                 })
-                .catch((e) => console.log(e));
+                .catch(console.error);
             }}
           >
             Login
@@ -120,7 +120,15 @@ export default function Login(props: Props) {
             onClick={() => {
               Api.users
                 .register({ username, password })
-                .then((x) => console.log(x))
+                .then((userResp: any) => {
+                  onLogin({
+                    // eslint-disable-next-line no-underscore-dangle
+                    _id: userResp.data._id,
+                    username: userResp.data.username,
+                    password: userResp.data.password,
+                    devices: userResp.data.devices,
+                  });
+                })
                 .catch((e) => console.log(e));
             }}
           >

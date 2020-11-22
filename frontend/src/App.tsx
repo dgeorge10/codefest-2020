@@ -106,6 +106,8 @@ export default function App() {
   }, []);
   */
 
+  console.log(user);
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -120,25 +122,50 @@ export default function App() {
           >
             Codefest 2020
           </Typography>
-          <IconButton edge="end" color="inherit">
-            <Link to="/login" className={classes.link}>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <Typography
-                  component="h1"
-                  variant="h6"
-                  color="inherit"
-                  noWrap
-                  className={classes.title}
-                  style={{ padding: "5px" }}
-                >
-                  {!_.isEqual(defaultUser, user)
-                    ? `Welcome, ${user.username}`
-                    : "Log in"}
-                </Typography>
-                <PersonIcon />
-              </div>
-            </Link>
-          </IconButton>
+          {_.isEqual(defaultUser, user) ? (
+            <IconButton edge="end" color="inherit">
+              <Link to="/login" className={classes.link}>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <Typography
+                    component="h1"
+                    variant="h6"
+                    color="inherit"
+                    noWrap
+                    className={classes.title}
+                    style={{ padding: "5px" }}
+                  >
+                    Log in
+                  </Typography>
+                  <PersonIcon />
+                </div>
+              </Link>
+            </IconButton>
+          ) : (
+            <IconButton
+              edge="end"
+              color="inherit"
+              onClick={() => {
+                setUser(defaultUser);
+                history.push("/login");
+              }}
+            >
+              <Link to="/login" className={classes.link}>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <Typography
+                    component="h1"
+                    variant="h6"
+                    color="inherit"
+                    noWrap
+                    className={classes.title}
+                    style={{ padding: "5px" }}
+                  >
+                    {`Welcome ${user.username}!`}
+                  </Typography>
+                  <PersonIcon />
+                </div>
+              </Link>
+            </IconButton>
+          )}
         </Toolbar>
       </AppBar>
       <Drawer
@@ -193,10 +220,7 @@ export default function App() {
         <Container maxWidth="lg" className={classes.container}>
           <Switch>
             <Route exact path="/" component={Dashboard} />
-            <Route
-              path="/dashboard"
-              render={() => <Dashboard user={user} setUser={setUser} />}
-            />
+            <Route path="/dashboard" render={() => <Dashboard user={user} />} />
             <Route path="/compare" component={Compare} />
             <Route
               path="/addDevice"

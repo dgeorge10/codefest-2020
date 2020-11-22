@@ -8,7 +8,9 @@ import {
   makeStyles,
   Grid,
   Typography,
+  IconButton,
 } from "@material-ui/core";
+import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -75,6 +77,19 @@ export default function AddDevice(props: Props) {
                     {row.name}
                   </TableCell>
                   <TableCell>{`${deviceAverage(row).toFixed(3)}`}</TableCell>
+                  <TableCell>
+                    <IconButton
+                      aria-label="delete"
+                      onClick={() => {
+                        Api.devices
+                          .deleteDevice(row.name, user.username)
+                          .then((resp) => setUser(resp.data))
+                          .catch(console.error);
+                      }}
+                    >
+                      <DeleteForeverIcon />
+                    </IconButton>
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
@@ -96,7 +111,7 @@ export default function AddDevice(props: Props) {
           variant="contained"
           color="primary"
           onClick={() => {
-            Api.users
+            Api.devices
               .addDevice(deviceName, username)
               .then((resp) => {
                 setDeviceName("");

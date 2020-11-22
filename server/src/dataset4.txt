@@ -1,0 +1,840 @@
+Dishwasher,	November 1, 2020 07:46:35,	1.290939268
+Dishwasher,	November 1, 2020 12:14:42,	0.110376508
+Dishwasher,	November 1, 2020 14:53:05,	0.511868529
+Dishwasher,	November 1, 2020 20:38:04,	1.066978772
+Laundry Machine,	November 1, 2020 06:46:13,	1.537752765
+Laundry Machine,	November 1, 2020 12:13:00,	1.082967715
+Laundry Machine,	November 1, 2020 14:21:54,	0.038269151
+Laundry Machine,	November 1, 2020 18:53:16,	0.387709908
+Shower 1,	November 1, 2020 09:13:49,	2.492706542
+Shower 1,	November 1, 2020 10:19:26,	1.779855511
+Shower 1,	November 1, 2020 17:43:30,	2.543416584
+Shower 1,	November 1, 2020 21:06:27,	4.621995245
+Shower 2,	November 1, 2020 06:19:02,	3.198216769
+Shower 2,	November 1, 2020 13:47:31,	0.832113152
+Shower 2,	November 1, 2020 17:28:45,	3.011636425
+Shower 2,	November 1, 2020 20:08:31,	2.737946375
+Sink 1,	November 1, 2020 07:42:38,	1.588698027
+Sink 1,	November 1, 2020 11:01:06,	0.082639384
+Sink 1,	November 1, 2020 14:44:04,	2.130474822
+Sink 1,	November 1, 2020 18:36:02,	0.028835411
+Sink 2,	November 1, 2020 07:44:14,	2.317487661
+Sink 2,	November 1, 2020 13:28:52,	1.465418861
+Sink 2,	November 1, 2020 14:55:19,	2.735401715
+Sink 2,	November 1, 2020 20:40:29,	2.052226624
+Sink 3,	November 1, 2020 06:23:36,	0.783162538
+Sink 3,	November 1, 2020 12:32:50,	2.071736535
+Sink 3,	November 1, 2020 17:46:59,	1.894943922
+Sink 3,	November 1, 2020 19:42:15,	2.428271425
+Dishwasher,	November 2, 2020 09:27:05,	1.780717678
+Dishwasher,	November 2, 2020 13:30:54,	0.997459361
+Dishwasher,	November 2, 2020 15:20:28,	1.543480175
+Dishwasher,	November 2, 2020 21:40:54,	1.092122296
+Laundry Machine,	November 2, 2020 08:18:30,	0.78568372
+Laundry Machine,	November 2, 2020 12:42:29,	0.308327867
+Laundry Machine,	November 2, 2020 14:20:28,	1.291164199
+Laundry Machine,	November 2, 2020 21:03:30,	0.633158686
+Shower 1,	November 2, 2020 07:21:14,	5.649712661
+Shower 1,	November 2, 2020 11:53:56,	0.064291592
+Shower 1,	November 2, 2020 15:00:29,	0.672089305
+Shower 1,	November 2, 2020 18:23:31,	0.282330446
+Shower 2,	November 2, 2020 08:29:28,	5.641429472
+Shower 2,	November 2, 2020 11:30:39,	5.322167959
+Shower 2,	November 2, 2020 14:23:21,	5.844840446
+Shower 2,	November 2, 2020 19:15:48,	0.861109355
+Sink 1,	November 2, 2020 09:56:05,	2.336729127
+Sink 1,	November 2, 2020 10:38:32,	2.576247783
+Sink 1,	November 2, 2020 16:45:26,	2.62512779
+Sink 1,	November 2, 2020 21:46:57,	1.147126301
+Sink 2,	November 2, 2020 07:43:04,	0.844984635
+Sink 2,	November 2, 2020 11:51:43,	1.469799116
+Sink 2,	November 2, 2020 17:57:40,	1.233123911
+Sink 2,	November 2, 2020 20:09:21,	0.370291816
+Sink 3,	November 2, 2020 07:51:06,	1.97074964
+Sink 3,	November 2, 2020 13:06:46,	1.773215122
+Sink 3,	November 2, 2020 14:08:36,	1.225504189
+Sink 3,	November 2, 2020 18:53:10,	1.553734275
+Dishwasher,	November 3, 2020 06:59:15,	1.949863396
+Dishwasher,	November 3, 2020 10:34:23,	1.302340552
+Dishwasher,	November 3, 2020 15:43:32,	0.280065854
+Dishwasher,	November 3, 2020 20:03:21,	1.480846293
+Laundry Machine,	November 3, 2020 09:21:34,	0.618084233
+Laundry Machine,	November 3, 2020 12:03:26,	1.04908054
+Laundry Machine,	November 3, 2020 17:04:55,	0.541119773
+Laundry Machine,	November 3, 2020 20:30:18,	1.274583019
+Shower 1,	November 3, 2020 06:24:39,	5.498930497
+Shower 1,	November 3, 2020 12:03:19,	4.201853433
+Shower 1,	November 3, 2020 16:07:19,	2.812688345
+Shower 1,	November 3, 2020 21:28:49,	0.586370061
+Shower 2,	November 3, 2020 09:17:37,	1.868533541
+Shower 2,	November 3, 2020 11:42:03,	2.808841623
+Shower 2,	November 3, 2020 16:50:27,	1.65077371
+Shower 2,	November 3, 2020 18:05:03,	1.833159744
+Sink 1,	November 3, 2020 07:43:30,	0.552409691
+Sink 1,	November 3, 2020 12:33:45,	1.487630664
+Sink 1,	November 3, 2020 15:56:29,	2.168895611
+Sink 1,	November 3, 2020 18:44:21,	2.202959325
+Sink 2,	November 3, 2020 07:32:25,	2.503806406
+Sink 2,	November 3, 2020 10:47:23,	0.069839222
+Sink 2,	November 3, 2020 16:54:54,	1.648290438
+Sink 2,	November 3, 2020 18:08:16,	0.471775175
+Sink 3,	November 3, 2020 07:08:20,	0.937628575
+Sink 3,	November 3, 2020 12:55:59,	2.544451232
+Sink 3,	November 3, 2020 17:15:27,	1.627579986
+Sink 3,	November 3, 2020 21:29:39,	2.12835495
+Dishwasher,	November 4, 2020 07:10:30,	0.842551997
+Dishwasher,	November 4, 2020 13:32:11,	1.49357335
+Dishwasher,	November 4, 2020 16:37:23,	0.330124562
+Dishwasher,	November 4, 2020 19:44:32,	0.693855068
+Laundry Machine,	November 4, 2020 06:16:19,	1.132887235
+Laundry Machine,	November 4, 2020 12:33:16,	1.266776996
+Laundry Machine,	November 4, 2020 15:55:24,	0.542304615
+Laundry Machine,	November 4, 2020 19:38:18,	1.245921037
+Shower 1,	November 4, 2020 07:26:23,	0.576462131
+Shower 1,	November 4, 2020 12:19:01,	4.665024647
+Shower 1,	November 4, 2020 15:05:24,	5.190902164
+Shower 1,	November 4, 2020 18:32:22,	4.077345018
+Shower 2,	November 4, 2020 08:21:07,	0.028249586
+Shower 2,	November 4, 2020 11:07:54,	5.50928692
+Shower 2,	November 4, 2020 17:33:14,	1.397098692
+Shower 2,	November 4, 2020 21:30:38,	5.823257667
+Sink 1,	November 4, 2020 07:51:57,	0.688372854
+Sink 1,	November 4, 2020 11:32:37,	1.115956757
+Sink 1,	November 4, 2020 17:39:44,	0.426158892
+Sink 1,	November 4, 2020 21:07:31,	2.374783083
+Sink 2,	November 4, 2020 07:48:04,	1.99850554
+Sink 2,	November 4, 2020 13:45:54,	2.046814196
+Sink 2,	November 4, 2020 15:16:14,	0.714636602
+Sink 2,	November 4, 2020 19:41:16,	0.663043599
+Sink 3,	November 4, 2020 09:42:41,	1.588215532
+Sink 3,	November 4, 2020 11:57:24,	0.169685922
+Sink 3,	November 4, 2020 16:46:22,	1.747555674
+Sink 3,	November 4, 2020 18:55:05,	0.960737124
+Dishwasher,	November 5, 2020 07:51:39,	0.065691381
+Dishwasher,	November 5, 2020 11:41:54,	0.338838269
+Dishwasher,	November 5, 2020 14:48:29,	1.1786034
+Dishwasher,	November 5, 2020 19:29:45,	1.376129117
+Laundry Machine,	November 5, 2020 06:22:12,	0.617684787
+Laundry Machine,	November 5, 2020 10:36:12,	0.999642933
+Laundry Machine,	November 5, 2020 15:07:08,	0.878182103
+Laundry Machine,	November 5, 2020 20:04:34,	1.487978868
+Shower 1,	November 5, 2020 09:44:11,	2.106505533
+Shower 1,	November 5, 2020 10:35:35,	0.649403588
+Shower 1,	November 5, 2020 17:24:31,	0.822139113
+Shower 1,	November 5, 2020 20:36:18,	2.54580524
+Shower 2,	November 5, 2020 09:48:11,	3.889202354
+Shower 2,	November 5, 2020 10:38:32,	4.562811166
+Shower 2,	November 5, 2020 15:23:22,	1.62816703
+Shower 2,	November 5, 2020 19:24:01,	4.297431521
+Sink 1,	November 5, 2020 09:32:33,	1.698217223
+Sink 1,	November 5, 2020 12:46:57,	2.097672796
+Sink 1,	November 5, 2020 16:29:46,	1.142646978
+Sink 1,	November 5, 2020 19:31:20,	1.880292413
+Sink 2,	November 5, 2020 06:52:09,	2.392399126
+Sink 2,	November 5, 2020 12:42:40,	1.106182159
+Sink 2,	November 5, 2020 15:40:58,	0.422066366
+Sink 2,	November 5, 2020 19:54:16,	1.951971858
+Sink 3,	November 5, 2020 08:37:24,	2.526800079
+Sink 3,	November 5, 2020 12:26:52,	0.804574591
+Sink 3,	November 5, 2020 15:28:34,	0.068947551
+Sink 3,	November 5, 2020 20:09:49,	2.605764437
+Dishwasher,	November 6, 2020 09:34:43,	0.466749334
+Dishwasher,	November 6, 2020 10:21:20,	1.930311241
+Dishwasher,	November 6, 2020 14:15:07,	0.858527108
+Dishwasher,	November 6, 2020 21:16:45,	0.2748881
+Laundry Machine,	November 6, 2020 09:20:53,	1.373167822
+Laundry Machine,	November 6, 2020 10:23:46,	0.08510855
+Laundry Machine,	November 6, 2020 16:46:04,	1.648466908
+Laundry Machine,	November 6, 2020 18:04:49,	1.025531891
+Shower 1,	November 6, 2020 06:17:44,	5.870141448
+Shower 1,	November 6, 2020 10:57:07,	5.703554344
+Shower 1,	November 6, 2020 14:06:38,	5.210093632
+Shower 1,	November 6, 2020 18:07:54,	4.424123702
+Shower 2,	November 6, 2020 07:37:29,	0.204487617
+Shower 2,	November 6, 2020 11:50:44,	0.571015749
+Shower 2,	November 6, 2020 15:33:38,	1.772878244
+Shower 2,	November 6, 2020 18:18:55,	4.457700193
+Sink 1,	November 6, 2020 09:58:40,	1.897802226
+Sink 1,	November 6, 2020 11:43:32,	0.811986682
+Sink 1,	November 6, 2020 17:30:53,	1.786691457
+Sink 1,	November 6, 2020 19:34:07,	0.447533981
+Sink 2,	November 6, 2020 08:56:10,	2.225415953
+Sink 2,	November 6, 2020 12:42:20,	0.019510557
+Sink 2,	November 6, 2020 15:51:37,	2.349020857
+Sink 2,	November 6, 2020 21:30:33,	1.779926637
+Sink 3,	November 6, 2020 08:02:38,	1.655382293
+Sink 3,	November 6, 2020 13:17:19,	1.64512722
+Sink 3,	November 6, 2020 17:48:34,	1.445059942
+Sink 3,	November 6, 2020 20:43:21,	0.644107361
+Dishwasher,	November 7, 2020 09:47:53,	0.697060127
+Dishwasher,	November 7, 2020 11:28:41,	1.382163872
+Dishwasher,	November 7, 2020 14:51:53,	1.503290351
+Dishwasher,	November 7, 2020 20:31:45,	1.247464442
+Laundry Machine,	November 7, 2020 06:27:08,	0.394029359
+Laundry Machine,	November 7, 2020 12:15:47,	1.40152055
+Laundry Machine,	November 7, 2020 15:38:05,	0.134556492
+Laundry Machine,	November 7, 2020 20:33:16,	0.25152452
+Shower 1,	November 7, 2020 06:56:33,	5.214233582
+Shower 1,	November 7, 2020 13:36:55,	1.208443254
+Shower 1,	November 7, 2020 16:07:23,	1.922781418
+Shower 1,	November 7, 2020 18:01:40,	1.538378642
+Shower 2,	November 7, 2020 09:20:48,	5.386837874
+Shower 2,	November 7, 2020 12:40:35,	0.385870256
+Shower 2,	November 7, 2020 15:52:08,	1.851410066
+Shower 2,	November 7, 2020 19:27:06,	4.162341155
+Sink 1,	November 7, 2020 09:07:07,	1.081409963
+Sink 1,	November 7, 2020 12:17:27,	1.086782915
+Sink 1,	November 7, 2020 15:41:05,	1.911918497
+Sink 1,	November 7, 2020 21:13:29,	1.006112054
+Sink 2,	November 7, 2020 09:23:38,	0.911713255
+Sink 2,	November 7, 2020 11:34:05,	0.680990929
+Sink 2,	November 7, 2020 16:47:01,	2.714562823
+Sink 2,	November 7, 2020 20:23:45,	1.980357536
+Sink 3,	November 7, 2020 08:55:47,	2.358086433
+Sink 3,	November 7, 2020 10:37:22,	0.36625313
+Sink 3,	November 7, 2020 14:17:39,	2.572121366
+Sink 3,	November 7, 2020 21:30:33,	1.318780426
+Dishwasher,	November 8, 2020 08:58:09,	0.294555518
+Dishwasher,	November 8, 2020 11:07:00,	0.53975662
+Dishwasher,	November 8, 2020 16:22:10,	1.089167242
+Dishwasher,	November 8, 2020 21:07:47,	1.150346971
+Laundry Machine,	November 8, 2020 09:00:08,	0.060714156
+Laundry Machine,	November 8, 2020 13:45:34,	0.135024154
+Laundry Machine,	November 8, 2020 15:40:26,	0.284219458
+Laundry Machine,	November 8, 2020 20:57:50,	1.093316206
+Shower 1,	November 8, 2020 09:38:35,	4.140446279
+Shower 1,	November 8, 2020 10:35:08,	2.935844081
+Shower 1,	November 8, 2020 17:25:49,	1.244296214
+Shower 1,	November 8, 2020 19:20:07,	2.479198039
+Shower 2,	November 8, 2020 09:51:59,	0.4532501
+Shower 2,	November 8, 2020 11:21:59,	4.086998888
+Shower 2,	November 8, 2020 15:41:35,	3.069529288
+Shower 2,	November 8, 2020 18:50:02,	3.680343633
+Sink 1,	November 8, 2020 08:05:40,	0.180581776
+Sink 1,	November 8, 2020 12:48:30,	1.088487839
+Sink 1,	November 8, 2020 15:08:44,	2.738027941
+Sink 1,	November 8, 2020 18:47:24,	1.102639488
+Sink 2,	November 8, 2020 09:10:17,	1.298800949
+Sink 2,	November 8, 2020 12:40:33,	1.921465241
+Sink 2,	November 8, 2020 16:02:17,	0.914976152
+Sink 2,	November 8, 2020 19:33:00,	1.735025545
+Sink 3,	November 8, 2020 06:25:43,	1.687026067
+Sink 3,	November 8, 2020 13:19:34,	0.929720838
+Sink 3,	November 8, 2020 15:53:18,	1.775794243
+Sink 3,	November 8, 2020 21:13:55,	0.352648381
+Dishwasher,	November 9, 2020 06:54:39,	1.018607078
+Dishwasher,	November 9, 2020 13:09:01,	1.039832683
+Dishwasher,	November 9, 2020 15:14:07,	1.029984738
+Dishwasher,	November 9, 2020 18:44:00,	0.42830475
+Laundry Machine,	November 9, 2020 07:58:38,	1.125698462
+Laundry Machine,	November 9, 2020 10:20:29,	0.520797012
+Laundry Machine,	November 9, 2020 17:42:20,	1.090463387
+Laundry Machine,	November 9, 2020 20:55:21,	0.827910351
+Shower 1,	November 9, 2020 08:52:53,	3.514748617
+Shower 1,	November 9, 2020 11:41:39,	2.116013353
+Shower 1,	November 9, 2020 16:57:12,	4.66285423
+Shower 1,	November 9, 2020 21:39:14,	3.978089848
+Shower 2,	November 9, 2020 07:56:15,	2.53968947
+Shower 2,	November 9, 2020 10:21:02,	3.025563167
+Shower 2,	November 9, 2020 14:02:32,	2.792352167
+Shower 2,	November 9, 2020 20:57:11,	3.805969915
+Sink 1,	November 9, 2020 06:17:21,	2.182068321
+Sink 1,	November 9, 2020 11:27:19,	1.514114017
+Sink 1,	November 9, 2020 14:21:29,	2.341759921
+Sink 1,	November 9, 2020 20:55:52,	1.6813043
+Sink 2,	November 9, 2020 08:46:16,	1.547262416
+Sink 2,	November 9, 2020 10:49:20,	0.649889959
+Sink 2,	November 9, 2020 15:19:17,	0.372710994
+Sink 2,	November 9, 2020 20:31:27,	0.097279204
+Sink 3,	November 9, 2020 08:02:58,	0.753347216
+Sink 3,	November 9, 2020 13:24:41,	1.858330664
+Sink 3,	November 9, 2020 17:12:39,	0.358047111
+Sink 3,	November 9, 2020 21:12:48,	0.871369524
+Dishwasher,	November 10, 2020 06:05:19,	1.038073579
+Dishwasher,	November 10, 2020 10:36:33,	1.361043207
+Dishwasher,	November 10, 2020 14:39:35,	1.76087845
+Dishwasher,	November 10, 2020 19:05:37,	1.370474382
+Laundry Machine,	November 10, 2020 09:35:53,	0.96774936
+Laundry Machine,	November 10, 2020 11:37:32,	0.934414383
+Laundry Machine,	November 10, 2020 14:00:04,	0.261823207
+Laundry Machine,	November 10, 2020 20:05:34,	0.287398176
+Shower 1,	November 10, 2020 09:20:56,	0.786123008
+Shower 1,	November 10, 2020 13:56:41,	5.458690822
+Shower 1,	November 10, 2020 14:58:37,	2.354267968
+Shower 1,	November 10, 2020 20:01:41,	0.815104581
+Shower 2,	November 10, 2020 07:50:43,	4.472878226
+Shower 2,	November 10, 2020 10:36:09,	2.095865948
+Shower 2,	November 10, 2020 14:35:46,	6.219577116
+Shower 2,	November 10, 2020 19:43:59,	5.944211921
+Sink 1,	November 10, 2020 07:35:59,	1.466105496
+Sink 1,	November 10, 2020 12:10:29,	2.569603922
+Sink 1,	November 10, 2020 17:25:52,	2.380828436
+Sink 1,	November 10, 2020 20:40:43,	0.821923469
+Sink 2,	November 10, 2020 06:05:26,	0.742494914
+Sink 2,	November 10, 2020 11:08:31,	1.820548981
+Sink 2,	November 10, 2020 17:24:43,	0.810659213
+Sink 2,	November 10, 2020 18:48:28,	0.389996523
+Sink 3,	November 10, 2020 09:09:44,	0.42706499
+Sink 3,	November 10, 2020 10:35:13,	1.042394768
+Sink 3,	November 10, 2020 14:58:35,	2.288216611
+Sink 3,	November 10, 2020 18:58:47,	0.455197518
+Dishwasher,	November 11, 2020 07:05:16,	1.184082358
+Dishwasher,	November 11, 2020 10:16:39,	0.162806015
+Dishwasher,	November 11, 2020 15:44:19,	1.396880079
+Dishwasher,	November 11, 2020 20:07:44,	0.653521187
+Laundry Machine,	November 11, 2020 06:41:36,	1.439779138
+Laundry Machine,	November 11, 2020 12:08:38,	1.644165585
+Laundry Machine,	November 11, 2020 15:17:38,	1.6579145
+Laundry Machine,	November 11, 2020 18:54:11,	1.048312718
+Shower 1,	November 11, 2020 08:46:20,	3.253754969
+Shower 1,	November 11, 2020 11:07:04,	5.935401853
+Shower 1,	November 11, 2020 15:16:26,	4.99022557
+Shower 1,	November 11, 2020 18:13:40,	0.723231177
+Shower 2,	November 11, 2020 06:46:36,	4.710649596
+Shower 2,	November 11, 2020 10:10:29,	0.924954059
+Shower 2,	November 11, 2020 17:34:15,	5.420815472
+Shower 2,	November 11, 2020 18:01:07,	3.336492011
+Sink 1,	November 11, 2020 09:01:05,	2.18296536
+Sink 1,	November 11, 2020 12:04:47,	1.34926634
+Sink 1,	November 11, 2020 16:24:59,	1.201076545
+Sink 1,	November 11, 2020 18:55:08,	0.981543078
+Sink 2,	November 11, 2020 07:36:32,	1.406172336
+Sink 2,	November 11, 2020 13:13:21,	0.22928997
+Sink 2,	November 11, 2020 16:18:00,	1.245697468
+Sink 2,	November 11, 2020 19:09:33,	2.509983972
+Sink 3,	November 11, 2020 09:28:03,	0.011960507
+Sink 3,	November 11, 2020 13:13:59,	1.071356254
+Sink 3,	November 11, 2020 14:41:21,	0.387191163
+Sink 3,	November 11, 2020 19:30:30,	0.577876033
+Dishwasher,	November 12, 2020 09:53:31,	0.934378997
+Dishwasher,	November 12, 2020 10:58:29,	0.375470835
+Dishwasher,	November 12, 2020 17:15:21,	0.495194283
+Dishwasher,	November 12, 2020 19:12:39,	1.141694097
+Laundry Machine,	November 12, 2020 09:33:56,	0.636595673
+Laundry Machine,	November 12, 2020 12:28:47,	0.945521207
+Laundry Machine,	November 12, 2020 15:22:03,	0.954722995
+Laundry Machine,	November 12, 2020 18:10:44,	1.60781712
+Shower 1,	November 12, 2020 09:33:02,	2.657939122
+Shower 1,	November 12, 2020 13:35:22,	1.845660795
+Shower 1,	November 12, 2020 14:58:08,	3.532017002
+Shower 1,	November 12, 2020 19:05:17,	1.35702906
+Shower 2,	November 12, 2020 06:51:08,	2.953993878
+Shower 2,	November 12, 2020 13:27:08,	4.655024778
+Shower 2,	November 12, 2020 17:40:08,	2.470609284
+Shower 2,	November 12, 2020 20:35:10,	0.322851874
+Sink 1,	November 12, 2020 09:14:44,	0.869446221
+Sink 1,	November 12, 2020 10:17:40,	0.402290045
+Sink 1,	November 12, 2020 14:14:20,	0.518042901
+Sink 1,	November 12, 2020 21:04:03,	2.626098818
+Sink 2,	November 12, 2020 06:25:42,	1.896268909
+Sink 2,	November 12, 2020 11:19:18,	2.337922228
+Sink 2,	November 12, 2020 17:48:22,	0.580517068
+Sink 2,	November 12, 2020 19:58:34,	1.732334723
+Sink 3,	November 12, 2020 06:31:09,	1.633486602
+Sink 3,	November 12, 2020 12:39:39,	1.694412147
+Sink 3,	November 12, 2020 14:54:14,	0.205017629
+Sink 3,	November 12, 2020 21:16:38,	2.133103964
+Dishwasher,	November 13, 2020 07:15:26,	1.210608904
+Dishwasher,	November 13, 2020 11:57:31,	1.083567364
+Dishwasher,	November 13, 2020 14:26:19,	1.862500253
+Dishwasher,	November 13, 2020 21:57:31,	1.548862172
+Laundry Machine,	November 13, 2020 06:49:02,	1.609368428
+Laundry Machine,	November 13, 2020 10:12:08,	0.400830798
+Laundry Machine,	November 13, 2020 14:36:16,	0.134755281
+Laundry Machine,	November 13, 2020 19:53:40,	1.701173977
+Shower 1,	November 13, 2020 08:06:11,	2.34942094
+Shower 1,	November 13, 2020 11:32:13,	0.113748905
+Shower 1,	November 13, 2020 14:43:27,	2.409927034
+Shower 1,	November 13, 2020 20:55:55,	0.802471355
+Shower 2,	November 13, 2020 07:27:06,	4.318851748
+Shower 2,	November 13, 2020 10:48:04,	5.425499544
+Shower 2,	November 13, 2020 17:53:59,	0.800827455
+Shower 2,	November 13, 2020 20:31:06,	4.393705542
+Sink 1,	November 13, 2020 09:33:07,	0.546271548
+Sink 1,	November 13, 2020 12:39:33,	1.574961463
+Sink 1,	November 13, 2020 15:22:50,	2.250106146
+Sink 1,	November 13, 2020 21:39:36,	0.269298699
+Sink 2,	November 13, 2020 08:10:20,	1.623609655
+Sink 2,	November 13, 2020 12:14:24,	1.427824298
+Sink 2,	November 13, 2020 16:09:27,	1.221393193
+Sink 2,	November 13, 2020 21:43:43,	2.627043758
+Sink 3,	November 13, 2020 08:55:53,	2.460516228
+Sink 3,	November 13, 2020 10:37:45,	0.416874836
+Sink 3,	November 13, 2020 16:50:36,	1.43907224
+Sink 3,	November 13, 2020 18:30:29,	0.312030896
+Dishwasher,	November 14, 2020 07:13:30,	1.293996337
+Dishwasher,	November 14, 2020 10:02:35,	0.648793452
+Dishwasher,	November 14, 2020 17:53:11,	1.842955881
+Dishwasher,	November 14, 2020 19:08:55,	1.488526524
+Laundry Machine,	November 14, 2020 08:28:48,	0.686945467
+Laundry Machine,	November 14, 2020 10:51:44,	1.611972587
+Laundry Machine,	November 14, 2020 14:17:28,	0.648325407
+Laundry Machine,	November 14, 2020 21:23:27,	0.741014202
+Shower 1,	November 14, 2020 08:04:07,	2.191902323
+Shower 1,	November 14, 2020 13:58:29,	5.46080799
+Shower 1,	November 14, 2020 15:37:38,	1.08765962
+Shower 1,	November 14, 2020 20:03:02,	1.040747088
+Shower 2,	November 14, 2020 06:44:13,	1.675628803
+Shower 2,	November 14, 2020 11:10:20,	0.618889844
+Shower 2,	November 14, 2020 15:05:33,	4.187166619
+Shower 2,	November 14, 2020 20:22:55,	0.911268949
+Sink 1,	November 14, 2020 09:10:21,	2.093521735
+Sink 1,	November 14, 2020 12:12:13,	2.477113053
+Sink 1,	November 14, 2020 17:35:26,	1.513772902
+Sink 1,	November 14, 2020 21:37:13,	1.200226615
+Sink 2,	November 14, 2020 07:12:07,	1.981277671
+Sink 2,	November 14, 2020 13:41:35,	2.06412909
+Sink 2,	November 14, 2020 16:09:10,	1.81907001
+Sink 2,	November 14, 2020 21:05:03,	2.531675456
+Sink 3,	November 14, 2020 09:05:31,	2.144545546
+Sink 3,	November 14, 2020 13:15:46,	2.292783143
+Sink 3,	November 14, 2020 14:05:54,	1.44370178
+Sink 3,	November 14, 2020 21:14:55,	1.753913459
+Dishwasher,	November 15, 2020 09:31:46,	1.240010627
+Dishwasher,	November 15, 2020 13:13:56,	0.004037236
+Dishwasher,	November 15, 2020 16:38:57,	0.000438048
+Dishwasher,	November 15, 2020 18:09:43,	1.694143766
+Laundry Machine,	November 15, 2020 08:32:08,	1.715557595
+Laundry Machine,	November 15, 2020 10:17:23,	0.459427789
+Laundry Machine,	November 15, 2020 15:05:24,	1.057351328
+Laundry Machine,	November 15, 2020 21:02:00,	0.213989741
+Shower 1,	November 15, 2020 09:09:23,	4.404068894
+Shower 1,	November 15, 2020 10:05:24,	2.252449711
+Shower 1,	November 15, 2020 15:56:09,	2.404042107
+Shower 1,	November 15, 2020 20:55:41,	2.322017395
+Shower 2,	November 15, 2020 06:51:37,	2.695848715
+Shower 2,	November 15, 2020 11:56:16,	5.108571184
+Shower 2,	November 15, 2020 15:10:46,	3.647989546
+Shower 2,	November 15, 2020 18:40:38,	2.981259491
+Sink 1,	November 15, 2020 06:08:44,	1.521083638
+Sink 1,	November 15, 2020 13:49:53,	2.30162902
+Sink 1,	November 15, 2020 16:08:10,	1.546484682
+Sink 1,	November 15, 2020 20:14:04,	1.208679986
+Sink 2,	November 15, 2020 09:40:46,	2.401130924
+Sink 2,	November 15, 2020 10:40:55,	2.652808646
+Sink 2,	November 15, 2020 16:59:43,	1.961263561
+Sink 2,	November 15, 2020 20:31:38,	2.167158649
+Sink 3,	November 15, 2020 09:39:52,	2.509011749
+Sink 3,	November 15, 2020 12:55:45,	0.819045961
+Sink 3,	November 15, 2020 15:56:12,	2.237514155
+Sink 3,	November 15, 2020 18:17:00,	0.165625267
+Dishwasher,	November 16, 2020 07:29:59,	0.565092713
+Dishwasher,	November 16, 2020 10:02:56,	0.686089979
+Dishwasher,	November 16, 2020 15:44:00,	1.410014286
+Dishwasher,	November 16, 2020 18:26:11,	1.171764884
+Laundry Machine,	November 16, 2020 06:34:50,	0.041618848
+Laundry Machine,	November 16, 2020 11:00:26,	0.419685536
+Laundry Machine,	November 16, 2020 15:15:55,	1.141790227
+Laundry Machine,	November 16, 2020 18:35:55,	0.745203543
+Shower 1,	November 16, 2020 08:42:27,	4.458267322
+Shower 1,	November 16, 2020 13:17:05,	0.895624478
+Shower 1,	November 16, 2020 17:02:47,	3.732670822
+Shower 1,	November 16, 2020 19:21:47,	1.484686647
+Shower 2,	November 16, 2020 07:45:48,	5.438474074
+Shower 2,	November 16, 2020 13:11:29,	5.806026625
+Shower 2,	November 16, 2020 14:51:58,	5.478628827
+Shower 2,	November 16, 2020 18:53:43,	2.332841678
+Sink 1,	November 16, 2020 06:44:21,	1.346529448
+Sink 1,	November 16, 2020 13:11:31,	0.592095681
+Sink 1,	November 16, 2020 16:23:01,	2.048715525
+Sink 1,	November 16, 2020 20:27:24,	0.065523803
+Sink 2,	November 16, 2020 06:17:40,	1.819947991
+Sink 2,	November 16, 2020 13:47:54,	1.014452813
+Sink 2,	November 16, 2020 14:28:18,	2.122786304
+Sink 2,	November 16, 2020 21:33:18,	1.524345335
+Sink 3,	November 16, 2020 09:10:55,	1.722492073
+Sink 3,	November 16, 2020 11:49:26,	2.478086258
+Sink 3,	November 16, 2020 16:18:27,	0.939537188
+Sink 3,	November 16, 2020 18:29:31,	1.05191854
+Dishwasher,	November 17, 2020 07:02:42,	0.927334654
+Dishwasher,	November 17, 2020 13:58:47,	1.467459038
+Dishwasher,	November 17, 2020 14:01:13,	0.22033992
+Dishwasher,	November 17, 2020 19:44:49,	0.738889822
+Laundry Machine,	November 17, 2020 07:48:40,	0.022958156
+Laundry Machine,	November 17, 2020 12:14:34,	1.372285966
+Laundry Machine,	November 17, 2020 17:16:37,	0.855192376
+Laundry Machine,	November 17, 2020 19:10:39,	1.592369605
+Shower 1,	November 17, 2020 08:02:15,	1.37685866
+Shower 1,	November 17, 2020 11:42:44,	1.355742588
+Shower 1,	November 17, 2020 14:43:21,	1.220154846
+Shower 1,	November 17, 2020 19:51:31,	0.592078728
+Shower 2,	November 17, 2020 06:37:40,	3.126910109
+Shower 2,	November 17, 2020 12:25:29,	2.697818143
+Shower 2,	November 17, 2020 17:33:48,	0.245823439
+Shower 2,	November 17, 2020 21:37:20,	5.316628995
+Sink 1,	November 17, 2020 08:51:27,	0.671768608
+Sink 1,	November 17, 2020 13:19:40,	2.007454149
+Sink 1,	November 17, 2020 14:12:28,	0.670724151
+Sink 1,	November 17, 2020 20:34:43,	1.671199751
+Sink 2,	November 17, 2020 07:18:38,	0.769023745
+Sink 2,	November 17, 2020 11:48:50,	1.131631699
+Sink 2,	November 17, 2020 14:34:19,	2.56601579
+Sink 2,	November 17, 2020 18:09:05,	0.194943206
+Sink 3,	November 17, 2020 09:11:46,	1.24497538
+Sink 3,	November 17, 2020 13:04:50,	1.895887666
+Sink 3,	November 17, 2020 16:42:29,	1.288565818
+Sink 3,	November 17, 2020 19:10:27,	0.115778595
+Dishwasher,	November 18, 2020 08:32:47,	1.998473248
+Dishwasher,	November 18, 2020 13:51:40,	0.97050323
+Dishwasher,	November 18, 2020 17:54:41,	1.798019755
+Dishwasher,	November 18, 2020 18:34:04,	0.510637069
+Laundry Machine,	November 18, 2020 08:36:34,	0.959143976
+Laundry Machine,	November 18, 2020 13:02:39,	0.381076833
+Laundry Machine,	November 18, 2020 16:04:39,	0.48860211
+Laundry Machine,	November 18, 2020 19:44:22,	1.529013189
+Shower 1,	November 18, 2020 07:26:50,	5.219746076
+Shower 1,	November 18, 2020 13:04:40,	2.034702087
+Shower 1,	November 18, 2020 14:42:20,	4.626786823
+Shower 1,	November 18, 2020 19:36:04,	2.083066555
+Shower 2,	November 18, 2020 07:01:29,	2.802062598
+Shower 2,	November 18, 2020 13:46:07,	0.460702726
+Shower 2,	November 18, 2020 14:22:09,	0.86808091
+Shower 2,	November 18, 2020 18:07:11,	0.324999144
+Sink 1,	November 18, 2020 09:57:26,	1.274702472
+Sink 1,	November 18, 2020 13:06:29,	1.375623394
+Sink 1,	November 18, 2020 15:44:53,	2.591292218
+Sink 1,	November 18, 2020 21:23:23,	2.717697734
+Sink 2,	November 18, 2020 09:36:37,	2.493229684
+Sink 2,	November 18, 2020 11:25:22,	1.023058141
+Sink 2,	November 18, 2020 16:04:58,	1.338104874
+Sink 2,	November 18, 2020 18:55:45,	1.353891393
+Sink 3,	November 18, 2020 08:03:52,	1.067645711
+Sink 3,	November 18, 2020 10:32:53,	2.090603654
+Sink 3,	November 18, 2020 15:05:28,	2.136581486
+Sink 3,	November 18, 2020 19:38:54,	1.425039473
+Dishwasher,	November 19, 2020 06:55:35,	1.1385438
+Dishwasher,	November 19, 2020 11:38:57,	0.177306076
+Dishwasher,	November 19, 2020 15:49:54,	1.047123521
+Dishwasher,	November 19, 2020 18:54:33,	1.96439569
+Laundry Machine,	November 19, 2020 07:17:10,	1.07308093
+Laundry Machine,	November 19, 2020 11:39:34,	1.194063247
+Laundry Machine,	November 19, 2020 14:03:41,	0.228826288
+Laundry Machine,	November 19, 2020 19:09:41,	1.280128596
+Shower 1,	November 19, 2020 09:26:24,	2.923756092
+Shower 1,	November 19, 2020 13:24:05,	0.810073191
+Shower 1,	November 19, 2020 15:00:08,	5.600257642
+Shower 1,	November 19, 2020 21:02:27,	5.719456686
+Shower 2,	November 19, 2020 08:41:34,	0.889238908
+Shower 2,	November 19, 2020 10:33:14,	0.339769919
+Shower 2,	November 19, 2020 15:27:22,	0.54343949
+Shower 2,	November 19, 2020 18:46:35,	1.695744422
+Sink 1,	November 19, 2020 07:17:32,	2.436961622
+Sink 1,	November 19, 2020 13:25:56,	0.013427642
+Sink 1,	November 19, 2020 15:18:13,	1.370533258
+Sink 1,	November 19, 2020 19:42:41,	1.624753813
+Sink 2,	November 19, 2020 08:27:40,	1.921623067
+Sink 2,	November 19, 2020 11:29:07,	2.055188731
+Sink 2,	November 19, 2020 16:04:41,	0.361153937
+Sink 2,	November 19, 2020 18:41:34,	0.718128338
+Sink 3,	November 19, 2020 06:12:16,	0.965416486
+Sink 3,	November 19, 2020 13:22:46,	2.348647186
+Sink 3,	November 19, 2020 15:29:36,	0.559670986
+Sink 3,	November 19, 2020 18:05:05,	0.703890392
+Dishwasher,	November 20, 2020 09:55:01,	0.620054999
+Dishwasher,	November 20, 2020 11:51:13,	1.431544009
+Dishwasher,	November 20, 2020 15:49:30,	0.334769505
+Dishwasher,	November 20, 2020 20:21:52,	1.186650295
+Laundry Machine,	November 20, 2020 07:20:09,	0.385991558
+Laundry Machine,	November 20, 2020 10:48:03,	0.194281997
+Laundry Machine,	November 20, 2020 17:02:15,	1.364775398
+Laundry Machine,	November 20, 2020 18:24:11,	1.419444186
+Shower 1,	November 20, 2020 08:54:46,	4.798329005
+Shower 1,	November 20, 2020 12:58:10,	4.05817207
+Shower 1,	November 20, 2020 14:28:54,	3.81588948
+Shower 1,	November 20, 2020 20:15:33,	5.991473526
+Shower 2,	November 20, 2020 08:23:15,	0.487681639
+Shower 2,	November 20, 2020 10:13:24,	4.54076983
+Shower 2,	November 20, 2020 15:03:09,	1.502794492
+Shower 2,	November 20, 2020 19:52:37,	4.541756468
+Sink 1,	November 20, 2020 08:54:29,	0.906458687
+Sink 1,	November 20, 2020 12:11:14,	2.386313189
+Sink 1,	November 20, 2020 15:54:48,	1.701378303
+Sink 1,	November 20, 2020 19:09:20,	2.29050546
+Sink 2,	November 20, 2020 08:11:56,	1.570790111
+Sink 2,	November 20, 2020 10:29:16,	1.055456968
+Sink 2,	November 20, 2020 17:01:45,	0.192857997
+Sink 2,	November 20, 2020 18:40:45,	1.41337469
+Sink 3,	November 20, 2020 07:10:35,	0.039559223
+Sink 3,	November 20, 2020 13:48:35,	2.367732843
+Sink 3,	November 20, 2020 15:01:38,	0.971174766
+Sink 3,	November 20, 2020 18:03:16,	2.058312573
+Dishwasher,	November 21, 2020 06:40:06,	0.97130076
+Dishwasher,	November 21, 2020 12:51:25,	0.018650577
+Dishwasher,	November 21, 2020 14:14:01,	0.827115508
+Dishwasher,	November 21, 2020 20:41:45,	1.090176497
+Laundry Machine,	November 21, 2020 07:21:36,	0.421146165
+Laundry Machine,	November 21, 2020 10:49:22,	0.767756298
+Laundry Machine,	November 21, 2020 17:13:54,	0.392995262
+Laundry Machine,	November 21, 2020 19:37:44,	0.0859523
+Shower 1,	November 21, 2020 08:22:35,	5.034022499
+Shower 1,	November 21, 2020 12:06:21,	1.396788829
+Shower 1,	November 21, 2020 17:20:32,	3.511115737
+Shower 1,	November 21, 2020 19:54:06,	1.635609091
+Shower 2,	November 21, 2020 07:50:12,	1.510958939
+Shower 2,	November 21, 2020 11:06:37,	3.83566022
+Shower 2,	November 21, 2020 17:33:25,	5.200337766
+Shower 2,	November 21, 2020 20:19:06,	4.469118803
+Sink 1,	November 21, 2020 08:49:30,	2.31926001
+Sink 1,	November 21, 2020 13:52:03,	2.373789548
+Sink 1,	November 21, 2020 14:27:45,	2.423776293
+Sink 1,	November 21, 2020 19:34:45,	1.880289723
+Sink 2,	November 21, 2020 06:35:46,	0.060709477
+Sink 2,	November 21, 2020 13:49:25,	0.036989237
+Sink 2,	November 21, 2020 17:52:40,	0.854182781
+Sink 2,	November 21, 2020 20:22:07,	2.715848453
+Sink 3,	November 21, 2020 06:31:03,	2.556758148
+Sink 3,	November 21, 2020 11:16:54,	0.894429564
+Sink 3,	November 21, 2020 16:45:20,	0.558555767
+Sink 3,	November 21, 2020 19:44:17,	2.22180689
+Dishwasher,	November 22, 2020 08:07:18,	1.157522561
+Dishwasher,	November 22, 2020 13:14:25,	1.816895717
+Dishwasher,	November 22, 2020 17:55:38,	1.219673545
+Dishwasher,	November 22, 2020 21:09:23,	0.286110212
+Laundry Machine,	November 22, 2020 07:29:24,	0.838285448
+Laundry Machine,	November 22, 2020 12:47:58,	1.60600647
+Laundry Machine,	November 22, 2020 16:19:31,	0.252720872
+Laundry Machine,	November 22, 2020 21:59:13,	0.355471907
+Shower 1,	November 22, 2020 07:41:28,	2.798917503
+Shower 1,	November 22, 2020 10:03:32,	2.7183216
+Shower 1,	November 22, 2020 15:25:49,	0.201578271
+Shower 1,	November 22, 2020 19:03:51,	3.243228583
+Shower 2,	November 22, 2020 06:15:13,	0.818645467
+Shower 2,	November 22, 2020 12:06:44,	4.539099065
+Shower 2,	November 22, 2020 16:54:20,	2.409164354
+Shower 2,	November 22, 2020 19:59:39,	3.962265387
+Sink 1,	November 22, 2020 08:38:27,	0.039963146
+Sink 1,	November 22, 2020 12:27:06,	0.763940671
+Sink 1,	November 22, 2020 17:52:22,	0.492297928
+Sink 1,	November 22, 2020 20:01:05,	1.301914065
+Sink 2,	November 22, 2020 09:11:27,	1.694247517
+Sink 2,	November 22, 2020 13:57:05,	1.728931876
+Sink 2,	November 22, 2020 17:39:07,	0.061425682
+Sink 2,	November 22, 2020 19:27:55,	1.501323618
+Sink 3,	November 22, 2020 07:10:00,	0.96849479
+Sink 3,	November 22, 2020 10:08:59,	0.721645986
+Sink 3,	November 22, 2020 16:51:39,	0.996395514
+Sink 3,	November 22, 2020 19:44:17,	1.024672565
+Dishwasher,	November 23, 2020 07:51:24,	0.178436642
+Dishwasher,	November 23, 2020 11:21:24,	1.876394831
+Dishwasher,	November 23, 2020 17:21:07,	0.713480941
+Dishwasher,	November 23, 2020 20:38:50,	0.438620937
+Laundry Machine,	November 23, 2020 09:01:40,	1.459380189
+Laundry Machine,	November 23, 2020 10:08:09,	1.67560858
+Laundry Machine,	November 23, 2020 15:58:46,	1.692781423
+Laundry Machine,	November 23, 2020 19:12:31,	1.216461649
+Shower 1,	November 23, 2020 07:56:45,	2.205261261
+Shower 1,	November 23, 2020 12:55:49,	1.431210679
+Shower 1,	November 23, 2020 14:31:57,	5.883668908
+Shower 1,	November 23, 2020 19:02:24,	3.370590286
+Shower 2,	November 23, 2020 08:19:56,	1.358216905
+Shower 2,	November 23, 2020 10:13:02,	2.453914854
+Shower 2,	November 23, 2020 16:56:15,	4.422563714
+Shower 2,	November 23, 2020 19:06:27,	3.094869927
+Sink 1,	November 23, 2020 06:59:55,	1.742868542
+Sink 1,	November 23, 2020 13:47:41,	0.503652517
+Sink 1,	November 23, 2020 14:05:07,	1.194631692
+Sink 1,	November 23, 2020 21:58:49,	1.329581691
+Sink 2,	November 23, 2020 08:07:18,	0.720225692
+Sink 2,	November 23, 2020 10:05:15,	0.631950426
+Sink 2,	November 23, 2020 17:51:26,	0.105478497
+Sink 2,	November 23, 2020 18:22:21,	1.464922574
+Sink 3,	November 23, 2020 08:09:37,	1.559539516
+Sink 3,	November 23, 2020 13:19:13,	0.740020752
+Sink 3,	November 23, 2020 15:15:36,	0.048687805
+Sink 3,	November 23, 2020 18:54:36,	1.148500403
+Dishwasher,	November 24, 2020 09:01:51,	0.189873312
+Dishwasher,	November 24, 2020 13:42:18,	0.130304675
+Dishwasher,	November 24, 2020 16:59:40,	0.895334175
+Dishwasher,	November 24, 2020 21:23:22,	0.107935745
+Laundry Machine,	November 24, 2020 08:36:25,	1.098210156
+Laundry Machine,	November 24, 2020 10:35:38,	0.542959834
+Laundry Machine,	November 24, 2020 14:56:04,	1.350311178
+Laundry Machine,	November 24, 2020 20:30:02,	1.313939368
+Shower 1,	November 24, 2020 08:08:20,	3.939708035
+Shower 1,	November 24, 2020 13:14:44,	3.466443555
+Shower 1,	November 24, 2020 17:31:35,	3.787158085
+Shower 1,	November 24, 2020 20:37:01,	2.264797265
+Shower 2,	November 24, 2020 09:50:26,	6.232222327
+Shower 2,	November 24, 2020 13:02:50,	1.185959029
+Shower 2,	November 24, 2020 16:51:18,	1.204904092
+Shower 2,	November 24, 2020 19:05:26,	0.905625768
+Sink 1,	November 24, 2020 07:25:28,	0.193896717
+Sink 1,	November 24, 2020 12:46:24,	0.779143427
+Sink 1,	November 24, 2020 16:16:03,	2.29199049
+Sink 1,	November 24, 2020 19:51:55,	1.715507643
+Sink 2,	November 24, 2020 06:29:25,	2.079704514
+Sink 2,	November 24, 2020 11:53:16,	1.305675059
+Sink 2,	November 24, 2020 16:19:42,	0.999866515
+Sink 2,	November 24, 2020 20:21:26,	0.172751511
+Sink 3,	November 24, 2020 06:21:52,	2.279184848
+Sink 3,	November 24, 2020 12:18:00,	1.949820349
+Sink 3,	November 24, 2020 14:20:26,	2.065635537
+Sink 3,	November 24, 2020 21:35:27,	1.743213842
+Dishwasher,	November 25, 2020 07:12:44,	0.673960529
+Dishwasher,	November 25, 2020 10:20:18,	1.222144034
+Dishwasher,	November 25, 2020 14:40:27,	0.238792787
+Dishwasher,	November 25, 2020 21:56:24,	1.700481885
+Laundry Machine,	November 25, 2020 09:25:22,	1.619833877
+Laundry Machine,	November 25, 2020 11:42:41,	0.899414092
+Laundry Machine,	November 25, 2020 14:32:33,	1.721462641
+Laundry Machine,	November 25, 2020 18:57:09,	1.591061165
+Shower 1,	November 25, 2020 08:37:59,	5.795507579
+Shower 1,	November 25, 2020 12:42:39,	5.476850688
+Shower 1,	November 25, 2020 16:14:08,	5.23540096
+Shower 1,	November 25, 2020 21:39:25,	1.895847802
+Shower 2,	November 25, 2020 07:42:07,	4.187445928
+Shower 2,	November 25, 2020 12:20:11,	0.858990267
+Shower 2,	November 25, 2020 15:46:12,	3.27317001
+Shower 2,	November 25, 2020 19:16:47,	3.208283273
+Sink 1,	November 25, 2020 07:48:31,	2.629500313
+Sink 1,	November 25, 2020 13:48:21,	2.598663993
+Sink 1,	November 25, 2020 15:02:51,	1.840006634
+Sink 1,	November 25, 2020 21:20:19,	1.627208743
+Sink 2,	November 25, 2020 06:20:03,	0.023273233
+Sink 2,	November 25, 2020 10:08:10,	0.266961485
+Sink 2,	November 25, 2020 17:19:37,	0.328251885
+Sink 2,	November 25, 2020 20:32:35,	1.453720655
+Sink 3,	November 25, 2020 08:40:43,	1.543195781
+Sink 3,	November 25, 2020 12:53:54,	0.76219418
+Sink 3,	November 25, 2020 15:19:17,	1.333659765
+Sink 3,	November 25, 2020 19:52:23,	1.861782465
+Dishwasher,	November 26, 2020 06:59:52,	1.877751929
+Dishwasher,	November 26, 2020 12:55:28,	0.527319389
+Dishwasher,	November 26, 2020 16:55:32,	1.650432217
+Dishwasher,	November 26, 2020 18:21:11,	0.789659954
+Laundry Machine,	November 26, 2020 07:52:32,	1.740377965
+Laundry Machine,	November 26, 2020 12:43:22,	0.906448958
+Laundry Machine,	November 26, 2020 16:43:09,	1.429485003
+Laundry Machine,	November 26, 2020 19:09:17,	0.905696469
+Shower 1,	November 26, 2020 07:47:08,	6.135127751
+Shower 1,	November 26, 2020 13:10:03,	4.049694424
+Shower 1,	November 26, 2020 16:33:38,	4.099526766
+Shower 1,	November 26, 2020 20:27:27,	6.134483871
+Shower 2,	November 26, 2020 07:25:05,	3.357061158
+Shower 2,	November 26, 2020 13:37:45,	5.318322765
+Shower 2,	November 26, 2020 16:24:54,	4.567836956
+Shower 2,	November 26, 2020 19:32:56,	2.711372344
+Sink 1,	November 26, 2020 08:50:09,	0.365510295
+Sink 1,	November 26, 2020 12:33:54,	1.952617354
+Sink 1,	November 26, 2020 16:58:07,	1.62111257
+Sink 1,	November 26, 2020 21:33:14,	1.666478664
+Sink 2,	November 26, 2020 08:19:10,	1.68751572
+Sink 2,	November 26, 2020 13:30:15,	2.319099808
+Sink 2,	November 26, 2020 17:49:32,	1.509823473
+Sink 2,	November 26, 2020 20:25:54,	2.127902751
+Sink 3,	November 26, 2020 08:02:41,	1.010412446
+Sink 3,	November 26, 2020 13:56:25,	0.880845316
+Sink 3,	November 26, 2020 17:38:05,	1.711873492
+Sink 3,	November 26, 2020 20:01:25,	0.573225771
+Dishwasher,	November 27, 2020 06:43:46,	1.065947925
+Dishwasher,	November 27, 2020 10:57:00,	0.115685238
+Dishwasher,	November 27, 2020 17:52:01,	0.00787574
+Dishwasher,	November 27, 2020 21:19:49,	1.216302764
+Laundry Machine,	November 27, 2020 09:49:29,	1.622205578
+Laundry Machine,	November 27, 2020 12:30:28,	1.001771445
+Laundry Machine,	November 27, 2020 15:54:48,	1.746572428
+Laundry Machine,	November 27, 2020 19:10:07,	1.026255559
+Shower 1,	November 27, 2020 08:38:12,	0.78557818
+Shower 1,	November 27, 2020 13:45:50,	3.309580796
+Shower 1,	November 27, 2020 15:28:14,	3.79835497
+Shower 1,	November 27, 2020 20:46:37,	2.951075536
+Shower 2,	November 27, 2020 07:12:25,	1.338280432
+Shower 2,	November 27, 2020 12:53:21,	5.84294205
+Shower 2,	November 27, 2020 15:11:54,	4.984274111
+Shower 2,	November 27, 2020 21:33:24,	4.677205907
+Sink 1,	November 27, 2020 09:44:31,	1.757271488
+Sink 1,	November 27, 2020 11:24:33,	0.289920496
+Sink 1,	November 27, 2020 14:51:43,	0.92796916
+Sink 1,	November 27, 2020 20:13:37,	1.126618946
+Sink 2,	November 27, 2020 07:07:37,	0.593521565
+Sink 2,	November 27, 2020 13:20:26,	0.730814731
+Sink 2,	November 27, 2020 17:35:19,	1.111235349
+Sink 2,	November 27, 2020 20:18:00,	2.358191685
+Sink 3,	November 27, 2020 07:23:13,	1.160328797
+Sink 3,	November 27, 2020 12:18:44,	2.569994034
+Sink 3,	November 27, 2020 14:40:28,	0.818703285
+Sink 3,	November 27, 2020 19:23:26,	0.62201789
+Dishwasher,	November 28, 2020 08:17:29,	1.452281146
+Dishwasher,	November 28, 2020 13:43:50,	1.62655549
+Dishwasher,	November 28, 2020 14:50:45,	1.930735751
+Dishwasher,	November 28, 2020 19:58:33,	1.913480935
+Laundry Machine,	November 28, 2020 09:42:24,	0.208452255
+Laundry Machine,	November 28, 2020 13:06:55,	0.841568511
+Laundry Machine,	November 28, 2020 15:26:41,	0.589483825
+Laundry Machine,	November 28, 2020 21:02:47,	0.242157691
+Shower 1,	November 28, 2020 06:04:49,	4.226094021
+Shower 1,	November 28, 2020 11:08:41,	3.922260805
+Shower 1,	November 28, 2020 17:29:37,	2.71448168
+Shower 1,	November 28, 2020 21:55:24,	2.779658081
+Shower 2,	November 28, 2020 08:49:17,	2.544063772
+Shower 2,	November 28, 2020 12:19:33,	5.892123329
+Shower 2,	November 28, 2020 17:19:02,	4.759581575
+Shower 2,	November 28, 2020 19:28:09,	2.791618651
+Sink 1,	November 28, 2020 07:15:41,	0.096945088
+Sink 1,	November 28, 2020 10:43:54,	1.840866629
+Sink 1,	November 28, 2020 16:30:47,	1.499197968
+Sink 1,	November 28, 2020 21:53:12,	1.069150257
+Sink 2,	November 28, 2020 08:13:05,	0.480455618
+Sink 2,	November 28, 2020 12:43:16,	1.583883179
+Sink 2,	November 28, 2020 15:43:32,	0.603177553
+Sink 2,	November 28, 2020 21:00:46,	0.155646032
+Sink 3,	November 28, 2020 07:34:25,	1.325301866
+Sink 3,	November 28, 2020 10:04:56,	2.442014736
+Sink 3,	November 28, 2020 15:13:06,	2.060453248
+Sink 3,	November 28, 2020 21:36:02,	1.685922718
+Dishwasher,	November 29, 2020 09:43:58,	1.231606602
+Dishwasher,	November 29, 2020 12:00:55,	1.574960427
+Dishwasher,	November 29, 2020 15:59:02,	1.250224966
+Dishwasher,	November 29, 2020 20:49:46,	0.059931196
+Laundry Machine,	November 29, 2020 07:14:35,	0.633409093
+Laundry Machine,	November 29, 2020 10:34:58,	1.217963128
+Laundry Machine,	November 29, 2020 14:55:00,	1.02102717
+Laundry Machine,	November 29, 2020 21:26:00,	1.041003567
+Shower 1,	November 29, 2020 07:08:19,	5.203943421
+Shower 1,	November 29, 2020 12:43:15,	2.816917385
+Shower 1,	November 29, 2020 17:00:38,	5.031430588
+Shower 1,	November 29, 2020 18:20:59,	4.669637886
+Shower 2,	November 29, 2020 08:38:12,	0.720162773
+Shower 2,	November 29, 2020 11:33:30,	3.116479204
+Shower 2,	November 29, 2020 14:39:46,	0.526870632
+Shower 2,	November 29, 2020 19:05:22,	2.724127655
+Sink 1,	November 29, 2020 07:18:27,	1.908297306
+Sink 1,	November 29, 2020 13:31:22,	2.08038524
+Sink 1,	November 29, 2020 15:46:20,	1.182400954
+Sink 1,	November 29, 2020 21:39:38,	1.897528069
+Sink 2,	November 29, 2020 06:42:33,	1.495068646
+Sink 2,	November 29, 2020 10:29:07,	2.652785023
+Sink 2,	November 29, 2020 15:07:12,	2.098867308
+Sink 2,	November 29, 2020 20:32:11,	0.275613538
+Sink 3,	November 29, 2020 08:41:55,	1.431270828
+Sink 3,	November 29, 2020 12:11:44,	0.221246381
+Sink 3,	November 29, 2020 17:23:36,	0.846003876
+Sink 3,	November 29, 2020 19:57:00,	1.347125833
+Dishwasher,	November 30, 2020 08:19:04,	0.248503329
+Dishwasher,	November 30, 2020 10:38:48,	1.965601024
+Dishwasher,	November 30, 2020 14:19:33,	0.010711214
+Dishwasher,	November 30, 2020 20:19:03,	0.84002307
+Laundry Machine,	November 30, 2020 06:18:47,	0.274050568
+Laundry Machine,	November 30, 2020 10:22:38,	1.251535722
+Laundry Machine,	November 30, 2020 15:41:58,	0.150646608
+Laundry Machine,	November 30, 2020 20:46:57,	1.524317346
+Shower 1,	November 30, 2020 08:14:12,	1.06116835
+Shower 1,	November 30, 2020 10:50:22,	5.33832906
+Shower 1,	November 30, 2020 17:41:06,	1.191075334
+Shower 1,	November 30, 2020 19:02:16,	0.085007745
+Shower 2,	November 30, 2020 08:31:33,	3.729112429
+Shower 2,	November 30, 2020 11:06:42,	5.346373736
+Shower 2,	November 30, 2020 14:39:02,	2.729274683
+Shower 2,	November 30, 2020 19:49:29,	0.664214685
+Sink 1,	November 30, 2020 09:53:12,	1.938889654
+Sink 1,	November 30, 2020 12:15:22,	0.454531369
+Sink 1,	November 30, 2020 14:04:48,	1.498429311
+Sink 1,	November 30, 2020 19:42:47,	0.03090587
+Sink 2,	November 30, 2020 09:47:28,	0.603539573
+Sink 2,	November 30, 2020 12:01:48,	0.437856764
+Sink 2,	November 30, 2020 17:43:21,	1.292326697
+Sink 2,	November 30, 2020 21:02:51,	2.564548394
+Sink 3,	November 30, 2020 09:12:32,	1.826064855
+Sink 3,	November 30, 2020 11:17:53,	0.715000139
+Sink 3,	November 30, 2020 17:54:49,	0.151736965
+Sink 3,	November 30, 2020 21:40:03,	1.21735881

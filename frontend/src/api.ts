@@ -23,11 +23,8 @@ class UserApi {
     return instance.post("/api/_get_user", { username: username });
   }
 
-  addDevice(deviceName: string, username: string): Promise<any> {
-    return instance.post("/api/addDevice", {
-      deviceName: deviceName,
-      username: username,
-    });
+  getAllUsers(): Promise<any> {
+    return instance.get("/api/allUsers");
   }
 
   /*
@@ -37,6 +34,25 @@ class UserApi {
   */
 }
 
+class DeviceApi {
+  addDevice(deviceName: string, username: string): Promise<any> {
+    return instance.post("/api/addDevice", {
+      deviceName: deviceName,
+      username: username,
+    });
+  }
+
+  deleteDevice(deviceName: string, username: string): Promise<any> {
+    return instance.delete("/api/deleteDevice", {
+      data: {
+        username: username,
+        deviceName: deviceName,
+      },
+    });
+  }
+}
+
 export const Api = {
   users: new UserApi(),
+  devices: new DeviceApi(),
 };
