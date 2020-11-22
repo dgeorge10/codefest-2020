@@ -100,7 +100,9 @@ export function deviceUsageToMinutes(devices: Device[], day: Date) {
     device.usage.forEach((use) => {
       if (datesMatch(day, new Date(use.date))) {
         const minOfDay = dateToMin(new Date(use.date));
-        liveUsage[i].data[minOfDay].y += use.amount;
+        if (minOfDay <= maxMinutes) {
+          liveUsage[i].data[minOfDay].y += use.amount;
+        }
       }
     });
   });

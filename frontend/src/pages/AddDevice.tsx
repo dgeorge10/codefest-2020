@@ -37,7 +37,7 @@ interface Props {
   setUser: (user: User) => void;
 }
 
-function deviceAverage(row: Device): number {
+export function deviceAverage(row: Device): number {
   if (row.usage.length === 0) {
     return 0;
   }

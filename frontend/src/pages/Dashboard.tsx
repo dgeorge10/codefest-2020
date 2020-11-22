@@ -72,7 +72,7 @@ const dayLabels = [
   "Saturday",
 ];
 
-function getColorPalette(i: number, max: number): string {
+export function getColorPalette(i: number, max: number): string {
   return `hsl( ${(i / max) * 360} ,100%,50%)`;
 }
 
@@ -183,6 +183,43 @@ export default function Dashboard(props: Props) {
   return (
     <Grid container className={classes.container}>
       <Grid item xs={12} className={classes.chartGrid}>
+        <Paper elevation={3} style={{ padding: "10px" }}>
+          <Typography variant="h4">Current Usage</Typography>
+          <Line
+            data={liveLineData}
+            options={{
+              scales: {
+                yAxes: [
+                  {
+                    ticks: {
+                      beginAtZero: true,
+                      suggestedMin: 0,
+                    },
+                  },
+                ],
+                xAxes: [
+                  {
+                    scaleLabel: {
+                      display: true,
+                    },
+                    type: "time",
+                    time: {
+                      unit: "minute",
+                      stepSize: 15,
+                    },
+                  },
+                ],
+              },
+              legend: {
+                display: true,
+                position: "right",
+              },
+            }}
+          />
+        </Paper>
+      </Grid>
+
+      <Grid item xs={12} className={classes.chartGrid}>
         <Paper elevation={3} style={{ padding: "10px", flexShrink: 0 }}>
           <Typography variant="h4">Weekly Usage</Typography>
           <MuiPickersUtilsProvider utils={DateFnsUtils}>
@@ -239,42 +276,6 @@ export default function Dashboard(props: Props) {
                     },
                   },
                 ],
-              },
-            }}
-          />
-        </Paper>
-      </Grid>
-      <Grid item xs={12} className={classes.chartGrid}>
-        <Paper elevation={3} style={{ padding: "10px" }}>
-          <Typography variant="h4">Current Usage</Typography>
-          <Line
-            data={liveLineData}
-            options={{
-              scales: {
-                yAxes: [
-                  {
-                    ticks: {
-                      beginAtZero: true,
-                      suggestedMin: 0,
-                    },
-                  },
-                ],
-                xAxes: [
-                  {
-                    scaleLabel: {
-                      display: true,
-                    },
-                    type: "time",
-                    time: {
-                      unit: "minute",
-                      stepSize: 15,
-                    },
-                  },
-                ],
-              },
-              legend: {
-                display: true,
-                position: "right",
               },
             }}
           />
