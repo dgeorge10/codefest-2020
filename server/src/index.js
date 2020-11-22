@@ -83,7 +83,7 @@ app.post("/api/register", (req,res) => {
         });
         newUser.save()
         .then(() => {
-            res.redirect("./dashboard")
+            res.redirect("./api/dashboard/")
         })
         .catch((err) =>{
             console.log("Failed to register user ("+ username +"): Already Exists");
@@ -92,7 +92,6 @@ app.post("/api/register", (req,res) => {
 });
 
 app.post("/api/addDevice", (req, res) => {
-    console.log(req.body.deviceName);
     UserModel.findOne({username: req.body.username}, (err,user) => {
         if (err) {
             res.status(500).send("Failed to find user");
@@ -101,7 +100,6 @@ app.post("/api/addDevice", (req, res) => {
             name:req.body.deviceName,
             usage:[]
         });
-        console.log(user);
 
         user.devices.push(newDevice);
         user.save()
@@ -109,9 +107,37 @@ app.post("/api/addDevice", (req, res) => {
             res.send(user);
         }).catch((err) => {
             console.log(err);
-            res.status(500).send("that sucked");
+            res.status(500).send("Unable to save user with new device");
         });
     });
+});
+
+app.delete("/api/deleteDevice", (req, res) => {
+    UserModel.findOne({"username": req.body.username}).then(user => {
+        if(!user) {
+            res.status(500).send("Failed to find user");
+            return;
+        }
+        for (let i = 0; i < user.devices.length; i+=1) {
+            if (user.devices[i].name === req.body.deviceName) {
+                user.devices.splice(i, 1);
+                break;
+            }
+        }
+        user.save()
+        .then(() => {
+            res.send(user);
+        })
+        .catch((err) => {
+            console.log(err);
+            res.status(500).send("Unable to delete device");
+        });
+    })
+    .catch(err => {
+        res.status(500).send("Error removing device");
+        console.log(err);
+    });
+
 });
 
 
@@ -131,13 +157,24 @@ app.get("/api/statsidk", (req,res) => {
 });
 
 app.post("/api/_get_user", (req, res) => {
-    UserModel.find({"username": req.body.username},(err,user) =>{
-        if(err){
-            res.status(500).send("Failed to get all devices");
+    UserModel.findOne({"username": req.body.username}).then(user => {
+        if(!user){
+            res.status(500).send("Failed to get user devices");
             return;
         }
+        // TODO handle callback
         res.send(user.devices);
     });
+});
+
+app.get("/api/allUsers", (req, res) => {
+    UserModel.find({}, (err, users) => {
+        if(err){
+            res.status(500).send("Failed to get user devices");
+            return;
+        }
+        res.send(users);
+    })
 });
 
 app.post("/api/log_usage", (req,res) => {
