@@ -1,5 +1,5 @@
 export interface DeviceUsage {
-  date: string;
+  date: Date;
   amount: number;
 }
 
@@ -18,4 +18,9 @@ export interface User {
 export interface UserSimple {
   username: string;
   password: string;
+}
+
+export interface GroupedUsage {
+  name: string;
+  usage: DeviceUsage[];
 }

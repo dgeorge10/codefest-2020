@@ -126,6 +126,22 @@ export default function Login(props: Props) {
           >
             Register
           </Button>
+          {/*
+          <Button
+            variant="contained"
+            color="primary"
+            type="submit"
+            className={classes.button}
+            onClick={() => {
+              Api.users
+                .insert()
+                .then((x) => console.log(x))
+                .catch((e) => console.log(e));
+            }}
+          >
+            insert once
+          </Button>
+          */}
         </Grid>
       </Paper>
     </Grid>

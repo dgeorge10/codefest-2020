@@ -17,7 +17,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import { Api } from "../api";
-import { User } from "../models";
+import { User, Device } from "../models";
 
 const useStyles = makeStyles((theme) => ({
   grid: {
@@ -35,6 +35,21 @@ interface Props {
   setUser: (user: User) => void;
 }
 
+function deviceAverage(row: Device): number {
+  if (row.usage.length === 0) {
+    return 0;
+  }
+  const days =
+    (new Date(row.usage[row.usage.length - 1].date).getTime() -
+      new Date(row.usage[0].date).getTime()) /
+    (1000 * 3600 * 24);
+  let total = 0;
+  row.usage.forEach((use) => {
+    total += use.amount;
+  });
+  return total / Math.floor(1 + days);
+}
+
 export default function AddDevice(props: Props) {
   const { user, setUser } = props;
   const { username, devices } = user;
@@ -50,7 +65,7 @@ export default function AddDevice(props: Props) {
             <TableHead>
               <TableRow>
                 <TableCell>Device Name</TableCell>
-                <TableCell>Overall Usage</TableCell>
+                <TableCell>Average Usage (Gallons/Day)</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -59,7 +74,7 @@ export default function AddDevice(props: Props) {
                   <TableCell component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell>{row.usage}</TableCell>
+                  <TableCell>{`${deviceAverage(row).toFixed(3)}`}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

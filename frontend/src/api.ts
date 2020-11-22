@@ -29,6 +29,12 @@ class UserApi {
       username: username,
     });
   }
+
+  /*
+  insert(): Promise<any> {
+    return instance.get("/api/insertDevices");
+  }
+  */
 }
 
 export const Api = {
