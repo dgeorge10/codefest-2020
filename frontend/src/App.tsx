@@ -1,5 +1,5 @@
 /* eslint-disable object-curly-newline */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import _ from "lodash";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -27,6 +27,7 @@ import Compare from "./pages/Compare";
 import Login from "./pages/Login";
 import AddDevice from "./pages/AddDevice";
 import { User } from "./models";
+import { Api } from "./api";
 
 const useStyles = makeStyles((theme) => {
   const drawerWidth = theme.spacing(6);
@@ -96,6 +97,14 @@ export default function App() {
   const classes = useStyles({});
   const [user, setUser] = useState<User>(defaultUser);
   const history = useHistory();
+
+  /*
+  useEffect(() => {
+    Api.users.login({ username: "dennis", password: "test" }).then((resp) => {
+      setUser(resp.data);
+    });
+  }, []);
+  */
 
   return (
     <div className={classes.root}>
@@ -184,7 +193,10 @@ export default function App() {
         <Container maxWidth="lg" className={classes.container}>
           <Switch>
             <Route exact path="/" component={Dashboard} />
-            <Route path="/dashboard" render={() => <Dashboard user={user} />} />
+            <Route
+              path="/dashboard"
+              render={() => <Dashboard user={user} setUser={setUser} />}
+            />
             <Route path="/compare" component={Compare} />
             <Route
               path="/addDevice"

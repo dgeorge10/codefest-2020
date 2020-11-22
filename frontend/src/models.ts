@@ -26,13 +26,13 @@ export interface GroupedUsage {
 }
 
 export interface LiveDatapoint {
-    x: number;
-    y: number;
+  x: Date;
+  y: number;
 }
 
 export interface LiveDeviceUsage {
-    name: string;
-    resolution: string;
-    /* This should be cumulative */
-    data: LiveDatapoint[];
+  name: string;
+  resolution: string;
+  /* This should be cumulative */
+  data: LiveDatapoint[];
 }
