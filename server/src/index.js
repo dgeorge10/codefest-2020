@@ -2,7 +2,7 @@
 require("dotenv").config()
 
 /* ---------------- child_process ---------------*/
-const spawn = require("child_process");
+const child_process = require("child_process");
 
 /* ----------------- EXPRESS --------------------*/
 const express = require("express");
@@ -204,31 +204,37 @@ app.post("/api/log_usage", (req,res) => {
     });
 });
 
-app.post("/api/predict_weather", (req,res) => {
-    const pyprog = spawn('python3', ["./externals/predict_weather.py --lat " + req.body.lat + " --lon " + req.body.lon]);
-    pyprog.stdout.on('data', (data) => {
-        res.send(data);
-    });
-    pyprog.stderr.on('data', (data) => {
-        res.send(data);
+app.get("/api/predict_weather", (req,res) => {
+    const pyprog = child_process.spawn('python3', ["./src/externals/predict_weather.py", "--lat", 40/*req.body.lat*/, "--lon", -75/*req.body.lon*/]);
+    streamToString(pyprog.stdout).then((stream) => {
+        res.send(stream)
     });
 });
 
+function streamToString (stream) {
+  const chunks = []
+  return new Promise((resolve, reject) => {
+    stream.on('data', chunk => chunks.push(chunk))
+    stream.on('error', reject)
+    stream.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')))
+  })
+}
+
 /*
 app.get("/api/insertDevices", (req,res) => {
-    fs.readFile("/home/dennis/codefest-2020/server/src/dataset.txt", "utf8", (err, data) => {
+    fs.readFile("/home/dennis/codefest-2020/server/src/dataset4.txt", "utf8", (err, data) => {
         if (err) throw err;
 
 
         var newDevices = {};
 
-        var lines = data.split("\r\n");
+        var lines = data.split("\n");
         for(var i = 0; i<lines.length; i++) {
             var c = lines[i].split(",");
-            if (c.length === 3) {
+            if (c.length === 4) {
                 var device = c[0].replace("\t", "");
-                var date = new Date(c[1].replace("\t", "") + " 2020");
-                var amount = c[2].replace("\t", "");
+                var date = new Date(c[1].replace("\t", "") + " " + c[2]);
+                var amount = c[3].replace("\t", "");
             }
 
            const newUsage = new DeviceUsageModel({
@@ -249,7 +255,7 @@ app.get("/api/insertDevices", (req,res) => {
                 usage: newDevices[device]
             })
 
-            UserModel.findOne({username: "dennis"}, (err, user) => {
+            UserModel.findOne({username: "dan"}, (err, user) => {
                 if (err) {
                     res.status(500).send("failed to find user");
                 }
@@ -261,7 +267,6 @@ app.get("/api/insertDevices", (req,res) => {
         }
 
     });
-
 });
 */
 
