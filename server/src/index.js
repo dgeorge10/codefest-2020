@@ -178,30 +178,36 @@ app.get("/api/allUsers", (req, res) => {
 });
 
 app.post("/api/log_usage", (req,res) => {
-    console.log("received:", req.body.amount);
-    UserModel.findOne({username:req.body.username}).then(user => {
-        if(!user){
-            res.status(401).send("User(" + req.body.username +") not found");
-            return;
-        }
-        user.devices.forEach(device => {
-            if (device.name === req.body.device) {
-                /* Usage comes in as Liters convert to db which uses gallons */
-                const usage = new DeviceUsageModel({
-                    date: new Date(),
-                    amount: 0.264172 * req.body.amount
-                })
-                device.usage.push(usage);
-            }
-        })
-        // TODO: handle this callback
-        user.save(()=>{res.send("Done")});
+   console.log("received:", req.body.amount);
+   UserModel.findOne({username:req.body.username}).then(user => {
+      if(!user){
+         res.status(401).send("User(" + req.body.username +") not found");
+         return;
+      }
+      bcrypt.compare(req.body.password, user.password, (err, result)=>{
+         if( result ) {
+            user.devices.forEach(device => {
+               if (device.name === req.body.device) {
+                  /* Usage comes in as Liters convert to db which uses gallons */
+                  const usage = new DeviceUsageModel({
+                     date: new Date(),
+                     amount: 0.264172 * req.body.amount
+                  })
+                  device.usage.push(usage);
+               }
+            })
+            // TODO: handle this callback
+            user.save(()=>{res.send("Done")});
 
-    })
-    .catch(err => {
-        res.status(500).send("Error searching in database");
-        console.log(err)
-    });
+         } else {
+            res.status(401).send("error logging in");
+         };
+      });
+   })
+      .catch(err => {
+         res.status(500).send("Error searching in database");
+         console.log(err)
+      });
 });
 
 app.get("/api/predict_weather", (req,res) => {

@@ -98,16 +98,6 @@ export default function App() {
   const [user, setUser] = useState<User>(defaultUser);
   const history = useHistory();
 
-  /*
-  useEffect(() => {
-    Api.users.login({ username: "dennis", password: "test" }).then((resp) => {
-      setUser(resp.data);
-    });
-  }, []);
-  */
-
-  console.log(user);
-
   return (
     <div className={classes.root}>
       <CssBaseline />

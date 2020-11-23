@@ -4,9 +4,13 @@
 #include <WiFiClient.h>
 #include <stdio.h>
 
-const char* ssid = "Fios-jYGh4";
-const char* password = "ran66zany65swan";
+// Replace all "TODO" with your wifi login, site login, device, and password
+const char* ssid = "TODO";
+const char* password = "TODO";
 const char* serverName = "http://prieur.ml:3001/api/log_usage";
+const char* userName = "TODO";
+const char* userPassword = "TODO";
+const char* userDevice = "TODO";
 
 RH_NRF24 nrf24(2,4);
  
@@ -46,7 +50,7 @@ void send_post_request(unsigned int flow_rate) {
 	*/
 	http.addHeader("Content-Type", "application/json");
 	char postBuffer[200];
-	sprintf(postBuffer, "{\"username\":\"dennis\",\"device\":\"Sink 1\",\"amount\":\%f\}", liter_amount);
+	sprintf(postBuffer, "{\"username\":\"%s\",\"password\":\"%s\",\"device\":\"%s\",\"amount\":\%f\}", userName, userPassword, userDevice, liter_amount);
 	
 	String data = String((char*)postBuffer);
 	Serial.println(data);
